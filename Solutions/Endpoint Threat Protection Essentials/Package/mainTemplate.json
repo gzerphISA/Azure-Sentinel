@@ -30,165 +30,175 @@
     }
   },
   "variables": {
-    "solutionId": "azuresentinel.azure-sentinel-solution-endpointthreat",
-    "_solutionId": "[variables('solutionId')]",
     "email": "support@microsoft.com",
     "_email": "[variables('email')]",
-    "huntingQueryVersion1": "1.1.0",
-    "huntingQuerycontentId1": "56ebae61-89cf-42d9-99f4-3dff8ba33885",
-    "_huntingQuerycontentId1": "[variables('huntingQuerycontentId1')]",
-    "huntingQueryId1": "[resourceId('Microsoft.OperationalInsights/savedSearches', variables('_huntingQuerycontentId1'))]",
-    "huntingQueryTemplateSpecName1": "[concat(parameters('workspace'),'-hq-',uniquestring(variables('_huntingQuerycontentId1')))]",
-    "workspaceResourceId": "[resourceId('microsoft.OperationalInsights/Workspaces', parameters('workspace'))]",
-    "huntingQueryVersion2": "1.0.1",
-    "huntingQuerycontentId2": "0e429446-2798-49e4-924d-c37338f24e23",
-    "_huntingQuerycontentId2": "[variables('huntingQuerycontentId2')]",
-    "huntingQueryId2": "[resourceId('Microsoft.OperationalInsights/savedSearches', variables('_huntingQuerycontentId2'))]",
-    "huntingQueryTemplateSpecName2": "[concat(parameters('workspace'),'-hq-',uniquestring(variables('_huntingQuerycontentId2')))]",
-    "huntingQueryVersion3": "1.0.1",
-    "huntingQuerycontentId3": "299472c4-8382-4c5b-82d9-718cda193393",
-    "_huntingQuerycontentId3": "[variables('huntingQuerycontentId3')]",
-    "huntingQueryId3": "[resourceId('Microsoft.OperationalInsights/savedSearches', variables('_huntingQuerycontentId3'))]",
-    "huntingQueryTemplateSpecName3": "[concat(parameters('workspace'),'-hq-',uniquestring(variables('_huntingQuerycontentId3')))]",
-    "huntingQueryVersion4": "1.0.1",
-    "huntingQuerycontentId4": "f82c89fa-c969-4d12-832f-04d55d14522c",
-    "_huntingQuerycontentId4": "[variables('huntingQuerycontentId4')]",
-    "huntingQueryId4": "[resourceId('Microsoft.OperationalInsights/savedSearches', variables('_huntingQuerycontentId4'))]",
-    "huntingQueryTemplateSpecName4": "[concat(parameters('workspace'),'-hq-',uniquestring(variables('_huntingQuerycontentId4')))]",
-    "huntingQueryVersion5": "1.0.1",
-    "huntingQuerycontentId5": "e10e1d2f-265d-4d90-9037-7f3a6ed8a91e",
-    "_huntingQuerycontentId5": "[variables('huntingQuerycontentId5')]",
-    "huntingQueryId5": "[resourceId('Microsoft.OperationalInsights/savedSearches', variables('_huntingQuerycontentId5'))]",
-    "huntingQueryTemplateSpecName5": "[concat(parameters('workspace'),'-hq-',uniquestring(variables('_huntingQuerycontentId5')))]",
-    "huntingQueryVersion6": "2.0.0",
-    "huntingQuerycontentId6": "8f658a80-7fa9-4524-a95b-d9ab608e8850",
-    "_huntingQuerycontentId6": "[variables('huntingQuerycontentId6')]",
-    "huntingQueryId6": "[resourceId('Microsoft.OperationalInsights/savedSearches', variables('_huntingQuerycontentId6'))]",
-    "huntingQueryTemplateSpecName6": "[concat(parameters('workspace'),'-hq-',uniquestring(variables('_huntingQuerycontentId6')))]",
-    "huntingQueryVersion7": "1.1.0",
-    "huntingQuerycontentId7": "7aad876a-a6fe-4c11-879e-8b29d35ff739",
-    "_huntingQuerycontentId7": "[variables('huntingQuerycontentId7')]",
-    "huntingQueryId7": "[resourceId('Microsoft.OperationalInsights/savedSearches', variables('_huntingQuerycontentId7'))]",
-    "huntingQueryTemplateSpecName7": "[concat(parameters('workspace'),'-hq-',uniquestring(variables('_huntingQuerycontentId7')))]",
-    "huntingQueryVersion8": "1.0.1",
-    "huntingQuerycontentId8": "0b827a49-427e-4721-b05e-b151a8af524e",
-    "_huntingQuerycontentId8": "[variables('huntingQuerycontentId8')]",
-    "huntingQueryId8": "[resourceId('Microsoft.OperationalInsights/savedSearches', variables('_huntingQuerycontentId8'))]",
-    "huntingQueryTemplateSpecName8": "[concat(parameters('workspace'),'-hq-',uniquestring(variables('_huntingQuerycontentId8')))]",
-    "huntingQueryVersion9": "1.0.1",
-    "huntingQuerycontentId9": "c2074fce-b5ba-4c0a-9332-d08b8fc43c53",
-    "_huntingQuerycontentId9": "[variables('huntingQuerycontentId9')]",
-    "huntingQueryId9": "[resourceId('Microsoft.OperationalInsights/savedSearches', variables('_huntingQuerycontentId9'))]",
-    "huntingQueryTemplateSpecName9": "[concat(parameters('workspace'),'-hq-',uniquestring(variables('_huntingQuerycontentId9')))]",
-    "huntingQueryVersion10": "1.0.1",
-    "huntingQuerycontentId10": "a953f304-12e4-48ae-bedc-d58fb1b0c6a6",
-    "_huntingQuerycontentId10": "[variables('huntingQuerycontentId10')]",
-    "huntingQueryId10": "[resourceId('Microsoft.OperationalInsights/savedSearches', variables('_huntingQuerycontentId10'))]",
-    "huntingQueryTemplateSpecName10": "[concat(parameters('workspace'),'-hq-',uniquestring(variables('_huntingQuerycontentId10')))]",
-    "analyticRuleVersion1": "1.1.3",
-    "analyticRulecontentId1": "ca67c83e-7fff-4127-a3e3-1af66d6d4cad",
-    "_analyticRulecontentId1": "[variables('analyticRulecontentId1')]",
-    "analyticRuleId1": "[resourceId('Microsoft.SecurityInsights/AlertRuleTemplates', variables('analyticRulecontentId1'))]",
-    "analyticRuleTemplateSpecName1": "[concat(parameters('workspace'),'-ar-',uniquestring(variables('_analyticRulecontentId1')))]",
-    "analyticRuleVersion2": "1.0.1",
-    "analyticRulecontentId2": "a7b9df32-1367-402d-b385-882daf6e3020",
-    "_analyticRulecontentId2": "[variables('analyticRulecontentId2')]",
-    "analyticRuleId2": "[resourceId('Microsoft.SecurityInsights/AlertRuleTemplates', variables('analyticRulecontentId2'))]",
-    "analyticRuleTemplateSpecName2": "[concat(parameters('workspace'),'-ar-',uniquestring(variables('_analyticRulecontentId2')))]",
-    "analyticRuleVersion3": "1.1.2",
-    "analyticRulecontentId3": "d6190dde-8fd2-456a-ac5b-0a32400b0464",
-    "_analyticRulecontentId3": "[variables('analyticRulecontentId3')]",
-    "analyticRuleId3": "[resourceId('Microsoft.SecurityInsights/AlertRuleTemplates', variables('analyticRulecontentId3'))]",
-    "analyticRuleTemplateSpecName3": "[concat(parameters('workspace'),'-ar-',uniquestring(variables('_analyticRulecontentId3')))]",
-    "analyticRuleVersion4": "1.0.1",
-    "analyticRulecontentId4": "50cbf34a-4cdd-45d7-b3f5-8b53a1d0d14f",
-    "_analyticRulecontentId4": "[variables('analyticRulecontentId4')]",
-    "analyticRuleId4": "[resourceId('Microsoft.SecurityInsights/AlertRuleTemplates', variables('analyticRulecontentId4'))]",
-    "analyticRuleTemplateSpecName4": "[concat(parameters('workspace'),'-ar-',uniquestring(variables('_analyticRulecontentId4')))]",
-    "analyticRuleVersion5": "1.0.1",
-    "analyticRulecontentId5": "e7470b35-0128-4508-bfc9-e01cfb3c2eb7",
-    "_analyticRulecontentId5": "[variables('analyticRulecontentId5')]",
-    "analyticRuleId5": "[resourceId('Microsoft.SecurityInsights/AlertRuleTemplates', variables('analyticRulecontentId5'))]",
-    "analyticRuleTemplateSpecName5": "[concat(parameters('workspace'),'-ar-',uniquestring(variables('_analyticRulecontentId5')))]",
-    "analyticRuleVersion6": "1.1.3",
-    "analyticRulecontentId6": "75bf9902-0789-47c1-a5d8-f57046aa72df",
-    "_analyticRulecontentId6": "[variables('analyticRulecontentId6')]",
-    "analyticRuleId6": "[resourceId('Microsoft.SecurityInsights/AlertRuleTemplates', variables('analyticRulecontentId6'))]",
-    "analyticRuleTemplateSpecName6": "[concat(parameters('workspace'),'-ar-',uniquestring(variables('_analyticRulecontentId6')))]",
-    "analyticRuleVersion7": "1.0.2",
-    "analyticRulecontentId7": "d2e8fd50-8d66-11ec-b909-0242ac120002",
-    "_analyticRulecontentId7": "[variables('analyticRulecontentId7')]",
-    "analyticRuleId7": "[resourceId('Microsoft.SecurityInsights/AlertRuleTemplates', variables('analyticRulecontentId7'))]",
-    "analyticRuleTemplateSpecName7": "[concat(parameters('workspace'),'-ar-',uniquestring(variables('_analyticRulecontentId7')))]",
-    "analyticRuleVersion8": "1.0.1",
-    "analyticRulecontentId8": "c61ad0ac-ad68-4ebb-b41a-74296d3e0044",
-    "_analyticRulecontentId8": "[variables('analyticRulecontentId8')]",
-    "analyticRuleId8": "[resourceId('Microsoft.SecurityInsights/AlertRuleTemplates', variables('analyticRulecontentId8'))]",
-    "analyticRuleTemplateSpecName8": "[concat(parameters('workspace'),'-ar-',uniquestring(variables('_analyticRulecontentId8')))]",
-    "analyticRuleVersion9": "1.0.1",
-    "analyticRulecontentId9": "9367dff0-941d-44e2-8875-cb48570c7add",
-    "_analyticRulecontentId9": "[variables('analyticRulecontentId9')]",
-    "analyticRuleId9": "[resourceId('Microsoft.SecurityInsights/AlertRuleTemplates', variables('analyticRulecontentId9'))]",
-    "analyticRuleTemplateSpecName9": "[concat(parameters('workspace'),'-ar-',uniquestring(variables('_analyticRulecontentId9')))]",
-    "analyticRuleVersion10": "1.1.4",
-    "analyticRulecontentId10": "80da0a8f-cfe1-4cd0-a895-8bc1771a720e",
-    "_analyticRulecontentId10": "[variables('analyticRulecontentId10')]",
-    "analyticRuleId10": "[resourceId('Microsoft.SecurityInsights/AlertRuleTemplates', variables('analyticRulecontentId10'))]",
-    "analyticRuleTemplateSpecName10": "[concat(parameters('workspace'),'-ar-',uniquestring(variables('_analyticRulecontentId10')))]",
-    "analyticRuleVersion11": "1.0.1",
-    "analyticRulecontentId11": "f6502545-ae3a-4232-a8b0-79d87e5c98d7",
-    "_analyticRulecontentId11": "[variables('analyticRulecontentId11')]",
-    "analyticRuleId11": "[resourceId('Microsoft.SecurityInsights/AlertRuleTemplates', variables('analyticRulecontentId11'))]",
-    "analyticRuleTemplateSpecName11": "[concat(parameters('workspace'),'-ar-',uniquestring(variables('_analyticRulecontentId11')))]",
-    "analyticRuleVersion12": "1.0.2",
-    "analyticRulecontentId12": "15049017-527f-4d3b-b011-b0e99e68ef45",
-    "_analyticRulecontentId12": "[variables('analyticRulecontentId12')]",
-    "analyticRuleId12": "[resourceId('Microsoft.SecurityInsights/AlertRuleTemplates', variables('analyticRulecontentId12'))]",
-    "analyticRuleTemplateSpecName12": "[concat(parameters('workspace'),'-ar-',uniquestring(variables('_analyticRulecontentId12')))]",
-    "analyticRuleVersion13": "1.0.1",
-    "analyticRulecontentId13": "cbf6ad48-fa5c-4bf7-b205-28dbadb91255",
-    "_analyticRulecontentId13": "[variables('analyticRulecontentId13')]",
-    "analyticRuleId13": "[resourceId('Microsoft.SecurityInsights/AlertRuleTemplates', variables('analyticRulecontentId13'))]",
-    "analyticRuleTemplateSpecName13": "[concat(parameters('workspace'),'-ar-',uniquestring(variables('_analyticRulecontentId13')))]"
+    "_solutionName": "Endpoint Threat Protection Essentials",
+    "_solutionVersion": "3.0.1",
+    "solutionId": "azuresentinel.azure-sentinel-solution-endpointthreat",
+    "_solutionId": "[variables('solutionId')]",
+    "huntingQueryObject1": {
+      "huntingQueryVersion1": "1.1.0",
+      "_huntingQuerycontentId1": "56ebae61-89cf-42d9-99f4-3dff8ba33885",
+      "huntingQueryTemplateSpecName1": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat(parameters('workspace'),'-hq-',uniquestring('56ebae61-89cf-42d9-99f4-3dff8ba33885')))]"
+    },
+    "huntingQueryObject2": {
+      "huntingQueryVersion2": "1.0.1",
+      "_huntingQuerycontentId2": "0e429446-2798-49e4-924d-c37338f24e23",
+      "huntingQueryTemplateSpecName2": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat(parameters('workspace'),'-hq-',uniquestring('0e429446-2798-49e4-924d-c37338f24e23')))]"
+    },
+    "huntingQueryObject3": {
+      "huntingQueryVersion3": "1.0.1",
+      "_huntingQuerycontentId3": "299472c4-8382-4c5b-82d9-718cda193393",
+      "huntingQueryTemplateSpecName3": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat(parameters('workspace'),'-hq-',uniquestring('299472c4-8382-4c5b-82d9-718cda193393')))]"
+    },
+    "huntingQueryObject4": {
+      "huntingQueryVersion4": "1.0.1",
+      "_huntingQuerycontentId4": "f82c89fa-c969-4d12-832f-04d55d14522c",
+      "huntingQueryTemplateSpecName4": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat(parameters('workspace'),'-hq-',uniquestring('f82c89fa-c969-4d12-832f-04d55d14522c')))]"
+    },
+    "huntingQueryObject5": {
+      "huntingQueryVersion5": "1.0.1",
+      "_huntingQuerycontentId5": "e10e1d2f-265d-4d90-9037-7f3a6ed8a91e",
+      "huntingQueryTemplateSpecName5": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat(parameters('workspace'),'-hq-',uniquestring('e10e1d2f-265d-4d90-9037-7f3a6ed8a91e')))]"
+    },
+    "huntingQueryObject6": {
+      "huntingQueryVersion6": "2.0.0",
+      "_huntingQuerycontentId6": "8f658a80-7fa9-4524-a95b-d9ab608e8850",
+      "huntingQueryTemplateSpecName6": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat(parameters('workspace'),'-hq-',uniquestring('8f658a80-7fa9-4524-a95b-d9ab608e8850')))]"
+    },
+    "huntingQueryObject7": {
+      "huntingQueryVersion7": "1.1.0",
+      "_huntingQuerycontentId7": "7aad876a-a6fe-4c11-879e-8b29d35ff739",
+      "huntingQueryTemplateSpecName7": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat(parameters('workspace'),'-hq-',uniquestring('7aad876a-a6fe-4c11-879e-8b29d35ff739')))]"
+    },
+    "huntingQueryObject8": {
+      "huntingQueryVersion8": "1.0.1",
+      "_huntingQuerycontentId8": "0b827a49-427e-4721-b05e-b151a8af524e",
+      "huntingQueryTemplateSpecName8": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat(parameters('workspace'),'-hq-',uniquestring('0b827a49-427e-4721-b05e-b151a8af524e')))]"
+    },
+    "huntingQueryObject9": {
+      "huntingQueryVersion9": "1.0.1",
+      "_huntingQuerycontentId9": "c2074fce-b5ba-4c0a-9332-d08b8fc43c53",
+      "huntingQueryTemplateSpecName9": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat(parameters('workspace'),'-hq-',uniquestring('c2074fce-b5ba-4c0a-9332-d08b8fc43c53')))]"
+    },
+    "huntingQueryObject10": {
+      "huntingQueryVersion10": "1.0.1",
+      "_huntingQuerycontentId10": "a953f304-12e4-48ae-bedc-d58fb1b0c6a6",
+      "huntingQueryTemplateSpecName10": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat(parameters('workspace'),'-hq-',uniquestring('a953f304-12e4-48ae-bedc-d58fb1b0c6a6')))]"
+    },
+    "analyticRuleObject1": {
+      "analyticRuleVersion1": "1.1.3",
+      "_analyticRulecontentId1": "ca67c83e-7fff-4127-a3e3-1af66d6d4cad",
+      "analyticRuleId1": "[resourceId('Microsoft.SecurityInsights/AlertRuleTemplates', 'ca67c83e-7fff-4127-a3e3-1af66d6d4cad')]",
+      "analyticRuleTemplateSpecName1": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat(parameters('workspace'),'-ar-',uniquestring('ca67c83e-7fff-4127-a3e3-1af66d6d4cad')))]",
+      "_analyticRulecontentProductId1": "[concat(take(variables('_solutionId'),50),'-','ar','-', uniqueString(concat(variables('_solutionId'),'-','AnalyticsRule','-','ca67c83e-7fff-4127-a3e3-1af66d6d4cad','-', '1.1.3')))]"
+    },
+    "analyticRuleObject2": {
+      "analyticRuleVersion2": "1.0.1",
+      "_analyticRulecontentId2": "a7b9df32-1367-402d-b385-882daf6e3020",
+      "analyticRuleId2": "[resourceId('Microsoft.SecurityInsights/AlertRuleTemplates', 'a7b9df32-1367-402d-b385-882daf6e3020')]",
+      "analyticRuleTemplateSpecName2": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat(parameters('workspace'),'-ar-',uniquestring('a7b9df32-1367-402d-b385-882daf6e3020')))]",
+      "_analyticRulecontentProductId2": "[concat(take(variables('_solutionId'),50),'-','ar','-', uniqueString(concat(variables('_solutionId'),'-','AnalyticsRule','-','a7b9df32-1367-402d-b385-882daf6e3020','-', '1.0.1')))]"
+    },
+    "analyticRuleObject3": {
+      "analyticRuleVersion3": "1.1.2",
+      "_analyticRulecontentId3": "d6190dde-8fd2-456a-ac5b-0a32400b0464",
+      "analyticRuleId3": "[resourceId('Microsoft.SecurityInsights/AlertRuleTemplates', 'd6190dde-8fd2-456a-ac5b-0a32400b0464')]",
+      "analyticRuleTemplateSpecName3": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat(parameters('workspace'),'-ar-',uniquestring('d6190dde-8fd2-456a-ac5b-0a32400b0464')))]",
+      "_analyticRulecontentProductId3": "[concat(take(variables('_solutionId'),50),'-','ar','-', uniqueString(concat(variables('_solutionId'),'-','AnalyticsRule','-','d6190dde-8fd2-456a-ac5b-0a32400b0464','-', '1.1.2')))]"
+    },
+    "analyticRuleObject4": {
+      "analyticRuleVersion4": "1.0.1",
+      "_analyticRulecontentId4": "50cbf34a-4cdd-45d7-b3f5-8b53a1d0d14f",
+      "analyticRuleId4": "[resourceId('Microsoft.SecurityInsights/AlertRuleTemplates', '50cbf34a-4cdd-45d7-b3f5-8b53a1d0d14f')]",
+      "analyticRuleTemplateSpecName4": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat(parameters('workspace'),'-ar-',uniquestring('50cbf34a-4cdd-45d7-b3f5-8b53a1d0d14f')))]",
+      "_analyticRulecontentProductId4": "[concat(take(variables('_solutionId'),50),'-','ar','-', uniqueString(concat(variables('_solutionId'),'-','AnalyticsRule','-','50cbf34a-4cdd-45d7-b3f5-8b53a1d0d14f','-', '1.0.1')))]"
+    },
+    "analyticRuleObject5": {
+      "analyticRuleVersion5": "1.0.1",
+      "_analyticRulecontentId5": "e7470b35-0128-4508-bfc9-e01cfb3c2eb7",
+      "analyticRuleId5": "[resourceId('Microsoft.SecurityInsights/AlertRuleTemplates', 'e7470b35-0128-4508-bfc9-e01cfb3c2eb7')]",
+      "analyticRuleTemplateSpecName5": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat(parameters('workspace'),'-ar-',uniquestring('e7470b35-0128-4508-bfc9-e01cfb3c2eb7')))]",
+      "_analyticRulecontentProductId5": "[concat(take(variables('_solutionId'),50),'-','ar','-', uniqueString(concat(variables('_solutionId'),'-','AnalyticsRule','-','e7470b35-0128-4508-bfc9-e01cfb3c2eb7','-', '1.0.1')))]"
+    },
+    "analyticRuleObject6": {
+      "analyticRuleVersion6": "1.1.3",
+      "_analyticRulecontentId6": "75bf9902-0789-47c1-a5d8-f57046aa72df",
+      "analyticRuleId6": "[resourceId('Microsoft.SecurityInsights/AlertRuleTemplates', '75bf9902-0789-47c1-a5d8-f57046aa72df')]",
+      "analyticRuleTemplateSpecName6": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat(parameters('workspace'),'-ar-',uniquestring('75bf9902-0789-47c1-a5d8-f57046aa72df')))]",
+      "_analyticRulecontentProductId6": "[concat(take(variables('_solutionId'),50),'-','ar','-', uniqueString(concat(variables('_solutionId'),'-','AnalyticsRule','-','75bf9902-0789-47c1-a5d8-f57046aa72df','-', '1.1.3')))]"
+    },
+    "analyticRuleObject7": {
+      "analyticRuleVersion7": "1.0.2",
+      "_analyticRulecontentId7": "d2e8fd50-8d66-11ec-b909-0242ac120002",
+      "analyticRuleId7": "[resourceId('Microsoft.SecurityInsights/AlertRuleTemplates', 'd2e8fd50-8d66-11ec-b909-0242ac120002')]",
+      "analyticRuleTemplateSpecName7": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat(parameters('workspace'),'-ar-',uniquestring('d2e8fd50-8d66-11ec-b909-0242ac120002')))]",
+      "_analyticRulecontentProductId7": "[concat(take(variables('_solutionId'),50),'-','ar','-', uniqueString(concat(variables('_solutionId'),'-','AnalyticsRule','-','d2e8fd50-8d66-11ec-b909-0242ac120002','-', '1.0.2')))]"
+    },
+    "analyticRuleObject8": {
+      "analyticRuleVersion8": "1.0.1",
+      "_analyticRulecontentId8": "c61ad0ac-ad68-4ebb-b41a-74296d3e0044",
+      "analyticRuleId8": "[resourceId('Microsoft.SecurityInsights/AlertRuleTemplates', 'c61ad0ac-ad68-4ebb-b41a-74296d3e0044')]",
+      "analyticRuleTemplateSpecName8": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat(parameters('workspace'),'-ar-',uniquestring('c61ad0ac-ad68-4ebb-b41a-74296d3e0044')))]",
+      "_analyticRulecontentProductId8": "[concat(take(variables('_solutionId'),50),'-','ar','-', uniqueString(concat(variables('_solutionId'),'-','AnalyticsRule','-','c61ad0ac-ad68-4ebb-b41a-74296d3e0044','-', '1.0.1')))]"
+    },
+    "analyticRuleObject9": {
+      "analyticRuleVersion9": "1.0.1",
+      "_analyticRulecontentId9": "9367dff0-941d-44e2-8875-cb48570c7add",
+      "analyticRuleId9": "[resourceId('Microsoft.SecurityInsights/AlertRuleTemplates', '9367dff0-941d-44e2-8875-cb48570c7add')]",
+      "analyticRuleTemplateSpecName9": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat(parameters('workspace'),'-ar-',uniquestring('9367dff0-941d-44e2-8875-cb48570c7add')))]",
+      "_analyticRulecontentProductId9": "[concat(take(variables('_solutionId'),50),'-','ar','-', uniqueString(concat(variables('_solutionId'),'-','AnalyticsRule','-','9367dff0-941d-44e2-8875-cb48570c7add','-', '1.0.1')))]"
+    },
+    "analyticRuleObject10": {
+      "analyticRuleVersion10": "1.1.4",
+      "_analyticRulecontentId10": "80da0a8f-cfe1-4cd0-a895-8bc1771a720e",
+      "analyticRuleId10": "[resourceId('Microsoft.SecurityInsights/AlertRuleTemplates', '80da0a8f-cfe1-4cd0-a895-8bc1771a720e')]",
+      "analyticRuleTemplateSpecName10": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat(parameters('workspace'),'-ar-',uniquestring('80da0a8f-cfe1-4cd0-a895-8bc1771a720e')))]",
+      "_analyticRulecontentProductId10": "[concat(take(variables('_solutionId'),50),'-','ar','-', uniqueString(concat(variables('_solutionId'),'-','AnalyticsRule','-','80da0a8f-cfe1-4cd0-a895-8bc1771a720e','-', '1.1.4')))]"
+    },
+    "analyticRuleObject11": {
+      "analyticRuleVersion11": "1.0.1",
+      "_analyticRulecontentId11": "f6502545-ae3a-4232-a8b0-79d87e5c98d7",
+      "analyticRuleId11": "[resourceId('Microsoft.SecurityInsights/AlertRuleTemplates', 'f6502545-ae3a-4232-a8b0-79d87e5c98d7')]",
+      "analyticRuleTemplateSpecName11": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat(parameters('workspace'),'-ar-',uniquestring('f6502545-ae3a-4232-a8b0-79d87e5c98d7')))]",
+      "_analyticRulecontentProductId11": "[concat(take(variables('_solutionId'),50),'-','ar','-', uniqueString(concat(variables('_solutionId'),'-','AnalyticsRule','-','f6502545-ae3a-4232-a8b0-79d87e5c98d7','-', '1.0.1')))]"
+    },
+    "analyticRuleObject12": {
+      "analyticRuleVersion12": "1.0.2",
+      "_analyticRulecontentId12": "15049017-527f-4d3b-b011-b0e99e68ef45",
+      "analyticRuleId12": "[resourceId('Microsoft.SecurityInsights/AlertRuleTemplates', '15049017-527f-4d3b-b011-b0e99e68ef45')]",
+      "analyticRuleTemplateSpecName12": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat(parameters('workspace'),'-ar-',uniquestring('15049017-527f-4d3b-b011-b0e99e68ef45')))]",
+      "_analyticRulecontentProductId12": "[concat(take(variables('_solutionId'),50),'-','ar','-', uniqueString(concat(variables('_solutionId'),'-','AnalyticsRule','-','15049017-527f-4d3b-b011-b0e99e68ef45','-', '1.0.2')))]"
+    },
+    "analyticRuleObject13": {
+      "analyticRuleVersion13": "1.0.1",
+      "_analyticRulecontentId13": "cbf6ad48-fa5c-4bf7-b205-28dbadb91255",
+      "analyticRuleId13": "[resourceId('Microsoft.SecurityInsights/AlertRuleTemplates', 'cbf6ad48-fa5c-4bf7-b205-28dbadb91255')]",
+      "analyticRuleTemplateSpecName13": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat(parameters('workspace'),'-ar-',uniquestring('cbf6ad48-fa5c-4bf7-b205-28dbadb91255')))]",
+      "_analyticRulecontentProductId13": "[concat(take(variables('_solutionId'),50),'-','ar','-', uniqueString(concat(variables('_solutionId'),'-','AnalyticsRule','-','cbf6ad48-fa5c-4bf7-b205-28dbadb91255','-', '1.0.1')))]"
+    },
+    "_solutioncontentProductId": "[concat(take(variables('_solutionId'),50),'-','sl','-', uniqueString(concat(variables('_solutionId'),'-','Solution','-',variables('_solutionId'),'-', variables('_solutionVersion'))))]"
   },
   "resources": [
     {
-      "type": "Microsoft.Resources/templateSpecs",
-      "apiVersion": "2022-02-01",
-      "name": "[variables('huntingQueryTemplateSpecName1')]",
+      "type": "Microsoft.OperationalInsights/workspaces/providers/contentTemplates",
+      "apiVersion": "2023-04-01-preview",
+      "name": "[variables('huntingQueryObject1').huntingQueryTemplateSpecName1]",
       "location": "[parameters('workspace-location')]",
-      "tags": {
-        "hidden-sentinelWorkspaceId": "[variables('workspaceResourceId')]",
-        "hidden-sentinelContentType": "HuntingQuery"
-      },
-      "properties": {
-        "description": "Endpoint Threat Protection Essentials Hunting Query 1 with template",
-        "displayName": "Endpoint Threat Protection Essentials Hunting Query template"
-      }
-    },
-    {
-      "type": "Microsoft.Resources/templateSpecs/versions",
-      "apiVersion": "2022-02-01",
-      "name": "[concat(variables('huntingQueryTemplateSpecName1'),'/',variables('huntingQueryVersion1'))]",
-      "location": "[parameters('workspace-location')]",
-      "tags": {
-        "hidden-sentinelWorkspaceId": "[variables('workspaceResourceId')]",
-        "hidden-sentinelContentType": "HuntingQuery"
-      },
       "dependsOn": [
-        "[resourceId('Microsoft.Resources/templateSpecs', variables('huntingQueryTemplateSpecName1'))]"
+        "[extensionResourceId(resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspace')), 'Microsoft.SecurityInsights/contentPackages', variables('_solutionId'))]"
       ],
       "properties": {
-        "description": "BackupDeletion_HuntingQueries Hunting Query with template version 2.0.2",
+        "description": "BackupDeletion_HuntingQueries Hunting Query with template version 3.0.1",
         "mainTemplate": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-          "contentVersion": "[variables('huntingQueryVersion1')]",
+          "contentVersion": "[variables('huntingQueryObject1').huntingQueryVersion1]",
           "parameters": {},
           "variables": {},
           "resources": [
             {
               "type": "Microsoft.OperationalInsights/savedSearches",
-              "apiVersion": "2020-08-01",
+              "apiVersion": "2022-10-01",
               "name": "Endpoint_Threat_Protection_Essentials_Hunting_Query_1",
               "location": "[parameters('workspace-location')]",
               "properties": {
@@ -200,7 +210,7 @@
                 "tags": [
                   {
                     "name": "description",
-                    "value": "This hunting query helps to detect attempts to delete backup. Though such an activity could be legitimate as part of regular business operations, often ransomware also perform such actions so that once the files are encrypted by them, backups cannot be used to restore encrypted files and thus causing interruption to regular business services."
+                    "value": "This query detects attempts to delete backups, which could be ransomware activity to prevent file restoration and disrupt business services."
                   },
                   {
                     "name": "tactics",
@@ -216,13 +226,13 @@
             {
               "type": "Microsoft.OperationalInsights/workspaces/providers/metadata",
               "apiVersion": "2022-01-01-preview",
-              "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat('HuntingQuery-', last(split(variables('huntingQueryId1'),'/'))))]",
+              "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat('HuntingQuery-', last(split(resourceId('Microsoft.OperationalInsights/savedSearches', variables('huntingQueryObject1')._huntingQuerycontentId1),'/'))))]",
               "properties": {
                 "description": "Endpoint Threat Protection Essentials Hunting Query 1",
-                "parentId": "[variables('huntingQueryId1')]",
-                "contentId": "[variables('_huntingQuerycontentId1')]",
+                "parentId": "[resourceId('Microsoft.OperationalInsights/savedSearches', variables('huntingQueryObject1')._huntingQuerycontentId1)]",
+                "contentId": "[variables('huntingQueryObject1')._huntingQuerycontentId1]",
                 "kind": "HuntingQuery",
-                "version": "[variables('huntingQueryVersion1')]",
+                "version": "[variables('huntingQueryObject1').huntingQueryVersion1]",
                 "source": {
                   "kind": "Solution",
                   "name": "Endpoint Threat Protection Essentials",
@@ -241,46 +251,39 @@
               }
             }
           ]
-        }
+        },
+        "packageKind": "Solution",
+        "packageVersion": "[variables('_solutionVersion')]",
+        "packageName": "[variables('_solutionName')]",
+        "packageId": "[variables('_solutionId')]",
+        "contentSchemaVersion": "3.0.0",
+        "contentId": "[variables('huntingQueryObject1')._huntingQuerycontentId1]",
+        "contentKind": "HuntingQuery",
+        "displayName": "Backup Deletion",
+        "contentProductId": "[concat(take(variables('_solutionId'),50),'-','hq','-', uniqueString(concat(variables('_solutionId'),'-','HuntingQuery','-',variables('huntingQueryObject1')._huntingQuerycontentId1,'-', '1.1.0')))]",
+        "id": "[concat(take(variables('_solutionId'),50),'-','hq','-', uniqueString(concat(variables('_solutionId'),'-','HuntingQuery','-',variables('huntingQueryObject1')._huntingQuerycontentId1,'-', '1.1.0')))]",
+        "version": "1.1.0"
       }
     },
     {
-      "type": "Microsoft.Resources/templateSpecs",
-      "apiVersion": "2022-02-01",
-      "name": "[variables('huntingQueryTemplateSpecName2')]",
+      "type": "Microsoft.OperationalInsights/workspaces/providers/contentTemplates",
+      "apiVersion": "2023-04-01-preview",
+      "name": "[variables('huntingQueryObject2').huntingQueryTemplateSpecName2]",
       "location": "[parameters('workspace-location')]",
-      "tags": {
-        "hidden-sentinelWorkspaceId": "[variables('workspaceResourceId')]",
-        "hidden-sentinelContentType": "HuntingQuery"
-      },
-      "properties": {
-        "description": "Endpoint Threat Protection Essentials Hunting Query 2 with template",
-        "displayName": "Endpoint Threat Protection Essentials Hunting Query template"
-      }
-    },
-    {
-      "type": "Microsoft.Resources/templateSpecs/versions",
-      "apiVersion": "2022-02-01",
-      "name": "[concat(variables('huntingQueryTemplateSpecName2'),'/',variables('huntingQueryVersion2'))]",
-      "location": "[parameters('workspace-location')]",
-      "tags": {
-        "hidden-sentinelWorkspaceId": "[variables('workspaceResourceId')]",
-        "hidden-sentinelContentType": "HuntingQuery"
-      },
       "dependsOn": [
-        "[resourceId('Microsoft.Resources/templateSpecs', variables('huntingQueryTemplateSpecName2'))]"
+        "[extensionResourceId(resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspace')), 'Microsoft.SecurityInsights/contentPackages', variables('_solutionId'))]"
       ],
       "properties": {
-        "description": "Certutil-LOLBins_HuntingQueries Hunting Query with template version 2.0.2",
+        "description": "Certutil-LOLBins_HuntingQueries Hunting Query with template version 3.0.1",
         "mainTemplate": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-          "contentVersion": "[variables('huntingQueryVersion2')]",
+          "contentVersion": "[variables('huntingQueryObject2').huntingQueryVersion2]",
           "parameters": {},
           "variables": {},
           "resources": [
             {
               "type": "Microsoft.OperationalInsights/savedSearches",
-              "apiVersion": "2020-08-01",
+              "apiVersion": "2022-10-01",
               "name": "Endpoint_Threat_Protection_Essentials_Hunting_Query_2",
               "location": "[parameters('workspace-location')]",
               "properties": {
@@ -292,7 +295,7 @@
                 "tags": [
                   {
                     "name": "description",
-                    "value": "This detection uses Sysmon telemetry to hunt Certutil activities. Certutil is a command-line tool that is used to perform various cryptographic operations and manage ceritificates.\nIt is a legitimate tool and is used by many legitimate applications. However, it is also used by malware to perform malicious activities."
+                    "value": "Sysmon telemetry detects Certutil activities, a tool for cryptographic operations and certificate management. While legitimate, it's also used by malware."
                   },
                   {
                     "name": "tactics",
@@ -308,13 +311,13 @@
             {
               "type": "Microsoft.OperationalInsights/workspaces/providers/metadata",
               "apiVersion": "2022-01-01-preview",
-              "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat('HuntingQuery-', last(split(variables('huntingQueryId2'),'/'))))]",
+              "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat('HuntingQuery-', last(split(resourceId('Microsoft.OperationalInsights/savedSearches', variables('huntingQueryObject2')._huntingQuerycontentId2),'/'))))]",
               "properties": {
                 "description": "Endpoint Threat Protection Essentials Hunting Query 2",
-                "parentId": "[variables('huntingQueryId2')]",
-                "contentId": "[variables('_huntingQuerycontentId2')]",
+                "parentId": "[resourceId('Microsoft.OperationalInsights/savedSearches', variables('huntingQueryObject2')._huntingQuerycontentId2)]",
+                "contentId": "[variables('huntingQueryObject2')._huntingQuerycontentId2]",
                 "kind": "HuntingQuery",
-                "version": "[variables('huntingQueryVersion2')]",
+                "version": "[variables('huntingQueryObject2').huntingQueryVersion2]",
                 "source": {
                   "kind": "Solution",
                   "name": "Endpoint Threat Protection Essentials",
@@ -333,46 +336,39 @@
               }
             }
           ]
-        }
+        },
+        "packageKind": "Solution",
+        "packageVersion": "[variables('_solutionVersion')]",
+        "packageName": "[variables('_solutionName')]",
+        "packageId": "[variables('_solutionId')]",
+        "contentSchemaVersion": "3.0.0",
+        "contentId": "[variables('huntingQueryObject2')._huntingQuerycontentId2]",
+        "contentKind": "HuntingQuery",
+        "displayName": "Detect Certutil (LOLBins and LOLScripts) Usage",
+        "contentProductId": "[concat(take(variables('_solutionId'),50),'-','hq','-', uniqueString(concat(variables('_solutionId'),'-','HuntingQuery','-',variables('huntingQueryObject2')._huntingQuerycontentId2,'-', '1.0.1')))]",
+        "id": "[concat(take(variables('_solutionId'),50),'-','hq','-', uniqueString(concat(variables('_solutionId'),'-','HuntingQuery','-',variables('huntingQueryObject2')._huntingQuerycontentId2,'-', '1.0.1')))]",
+        "version": "1.0.1"
       }
     },
     {
-      "type": "Microsoft.Resources/templateSpecs",
-      "apiVersion": "2022-02-01",
-      "name": "[variables('huntingQueryTemplateSpecName3')]",
+      "type": "Microsoft.OperationalInsights/workspaces/providers/contentTemplates",
+      "apiVersion": "2023-04-01-preview",
+      "name": "[variables('huntingQueryObject3').huntingQueryTemplateSpecName3]",
       "location": "[parameters('workspace-location')]",
-      "tags": {
-        "hidden-sentinelWorkspaceId": "[variables('workspaceResourceId')]",
-        "hidden-sentinelContentType": "HuntingQuery"
-      },
-      "properties": {
-        "description": "Endpoint Threat Protection Essentials Hunting Query 3 with template",
-        "displayName": "Endpoint Threat Protection Essentials Hunting Query template"
-      }
-    },
-    {
-      "type": "Microsoft.Resources/templateSpecs/versions",
-      "apiVersion": "2022-02-01",
-      "name": "[concat(variables('huntingQueryTemplateSpecName3'),'/',variables('huntingQueryVersion3'))]",
-      "location": "[parameters('workspace-location')]",
-      "tags": {
-        "hidden-sentinelWorkspaceId": "[variables('workspaceResourceId')]",
-        "hidden-sentinelContentType": "HuntingQuery"
-      },
       "dependsOn": [
-        "[resourceId('Microsoft.Resources/templateSpecs', variables('huntingQueryTemplateSpecName3'))]"
+        "[extensionResourceId(resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspace')), 'Microsoft.SecurityInsights/contentPackages', variables('_solutionId'))]"
       ],
       "properties": {
-        "description": "FileExecutionWithOneCharacterInTheName_HuntingQueries Hunting Query with template version 2.0.2",
+        "description": "FileExecutionWithOneCharacterInTheName_HuntingQueries Hunting Query with template version 3.0.1",
         "mainTemplate": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-          "contentVersion": "[variables('huntingQueryVersion3')]",
+          "contentVersion": "[variables('huntingQueryObject3').huntingQueryVersion3]",
           "parameters": {},
           "variables": {},
           "resources": [
             {
               "type": "Microsoft.OperationalInsights/savedSearches",
-              "apiVersion": "2020-08-01",
+              "apiVersion": "2022-10-01",
               "name": "Endpoint_Threat_Protection_Essentials_Hunting_Query_3",
               "location": "[parameters('workspace-location')]",
               "properties": {
@@ -384,7 +380,7 @@
                 "tags": [
                   {
                     "name": "description",
-                    "value": "This query detects execution of files with one character in the name (e.g, a.exe, 7.ps1, g.vbs etc.). \nNormally files that are executed have more characters in the name and this can indicate a malicious file.\nRef: https://www.mandiant.com/resources/tactics-techniques-procedures-associated-with-maze-ransomware-incidents"
+                    "value": "This query detects execution of files with one character in the name (e.g, a.exe, 7.ps1, g.vbs etc.). \nNormally files that are executed have more characters in the name and this can indicate a malicious file."
                   },
                   {
                     "name": "tactics",
@@ -400,13 +396,13 @@
             {
               "type": "Microsoft.OperationalInsights/workspaces/providers/metadata",
               "apiVersion": "2022-01-01-preview",
-              "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat('HuntingQuery-', last(split(variables('huntingQueryId3'),'/'))))]",
+              "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat('HuntingQuery-', last(split(resourceId('Microsoft.OperationalInsights/savedSearches', variables('huntingQueryObject3')._huntingQuerycontentId3),'/'))))]",
               "properties": {
                 "description": "Endpoint Threat Protection Essentials Hunting Query 3",
-                "parentId": "[variables('huntingQueryId3')]",
-                "contentId": "[variables('_huntingQuerycontentId3')]",
+                "parentId": "[resourceId('Microsoft.OperationalInsights/savedSearches', variables('huntingQueryObject3')._huntingQuerycontentId3)]",
+                "contentId": "[variables('huntingQueryObject3')._huntingQuerycontentId3]",
                 "kind": "HuntingQuery",
-                "version": "[variables('huntingQueryVersion3')]",
+                "version": "[variables('huntingQueryObject3').huntingQueryVersion3]",
                 "source": {
                   "kind": "Solution",
                   "name": "Endpoint Threat Protection Essentials",
@@ -425,46 +421,39 @@
               }
             }
           ]
-        }
+        },
+        "packageKind": "Solution",
+        "packageVersion": "[variables('_solutionVersion')]",
+        "packageName": "[variables('_solutionName')]",
+        "packageId": "[variables('_solutionId')]",
+        "contentSchemaVersion": "3.0.0",
+        "contentId": "[variables('huntingQueryObject3')._huntingQuerycontentId3]",
+        "contentKind": "HuntingQuery",
+        "displayName": "Execution of File with One Character in the Name",
+        "contentProductId": "[concat(take(variables('_solutionId'),50),'-','hq','-', uniqueString(concat(variables('_solutionId'),'-','HuntingQuery','-',variables('huntingQueryObject3')._huntingQuerycontentId3,'-', '1.0.1')))]",
+        "id": "[concat(take(variables('_solutionId'),50),'-','hq','-', uniqueString(concat(variables('_solutionId'),'-','HuntingQuery','-',variables('huntingQueryObject3')._huntingQuerycontentId3,'-', '1.0.1')))]",
+        "version": "1.0.1"
       }
     },
     {
-      "type": "Microsoft.Resources/templateSpecs",
-      "apiVersion": "2022-02-01",
-      "name": "[variables('huntingQueryTemplateSpecName4')]",
+      "type": "Microsoft.OperationalInsights/workspaces/providers/contentTemplates",
+      "apiVersion": "2023-04-01-preview",
+      "name": "[variables('huntingQueryObject4').huntingQueryTemplateSpecName4]",
       "location": "[parameters('workspace-location')]",
-      "tags": {
-        "hidden-sentinelWorkspaceId": "[variables('workspaceResourceId')]",
-        "hidden-sentinelContentType": "HuntingQuery"
-      },
-      "properties": {
-        "description": "Endpoint Threat Protection Essentials Hunting Query 4 with template",
-        "displayName": "Endpoint Threat Protection Essentials Hunting Query template"
-      }
-    },
-    {
-      "type": "Microsoft.Resources/templateSpecs/versions",
-      "apiVersion": "2022-02-01",
-      "name": "[concat(variables('huntingQueryTemplateSpecName4'),'/',variables('huntingQueryVersion4'))]",
-      "location": "[parameters('workspace-location')]",
-      "tags": {
-        "hidden-sentinelWorkspaceId": "[variables('workspaceResourceId')]",
-        "hidden-sentinelContentType": "HuntingQuery"
-      },
       "dependsOn": [
-        "[resourceId('Microsoft.Resources/templateSpecs', variables('huntingQueryTemplateSpecName4'))]"
+        "[extensionResourceId(resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspace')), 'Microsoft.SecurityInsights/contentPackages', variables('_solutionId'))]"
       ],
       "properties": {
-        "description": "PersistViaIFEORegistryKey_HuntingQueries Hunting Query with template version 2.0.2",
+        "description": "PersistViaIFEORegistryKey_HuntingQueries Hunting Query with template version 3.0.1",
         "mainTemplate": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-          "contentVersion": "[variables('huntingQueryVersion4')]",
+          "contentVersion": "[variables('huntingQueryObject4').huntingQueryVersion4]",
           "parameters": {},
           "variables": {},
           "resources": [
             {
               "type": "Microsoft.OperationalInsights/savedSearches",
-              "apiVersion": "2020-08-01",
+              "apiVersion": "2022-10-01",
               "name": "Endpoint_Threat_Protection_Essentials_Hunting_Query_4",
               "location": "[parameters('workspace-location')]",
               "properties": {
@@ -476,7 +465,7 @@
                 "tags": [
                   {
                     "name": "description",
-                    "value": "This query detects instances where IFEO registry keys were created and deleted frequently within a short period of time.\nThis technique is used by adversaries to persist on a system by creating a registry key under the Image File Execution Options registry key.\nhttps://goayxh.medium.com/malware-persistence-image-file-execution-options-injection-ifeo-5aa0e81086f0"
+                    "value": "This query detects frequent creation and deletion of IFEO registry keys in a short time, a technique used by adversaries for system persistence."
                   },
                   {
                     "name": "tactics",
@@ -492,13 +481,13 @@
             {
               "type": "Microsoft.OperationalInsights/workspaces/providers/metadata",
               "apiVersion": "2022-01-01-preview",
-              "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat('HuntingQuery-', last(split(variables('huntingQueryId4'),'/'))))]",
+              "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat('HuntingQuery-', last(split(resourceId('Microsoft.OperationalInsights/savedSearches', variables('huntingQueryObject4')._huntingQuerycontentId4),'/'))))]",
               "properties": {
                 "description": "Endpoint Threat Protection Essentials Hunting Query 4",
-                "parentId": "[variables('huntingQueryId4')]",
-                "contentId": "[variables('_huntingQuerycontentId4')]",
+                "parentId": "[resourceId('Microsoft.OperationalInsights/savedSearches', variables('huntingQueryObject4')._huntingQuerycontentId4)]",
+                "contentId": "[variables('huntingQueryObject4')._huntingQuerycontentId4]",
                 "kind": "HuntingQuery",
-                "version": "[variables('huntingQueryVersion4')]",
+                "version": "[variables('huntingQueryObject4').huntingQueryVersion4]",
                 "source": {
                   "kind": "Solution",
                   "name": "Endpoint Threat Protection Essentials",
@@ -517,46 +506,39 @@
               }
             }
           ]
-        }
+        },
+        "packageKind": "Solution",
+        "packageVersion": "[variables('_solutionVersion')]",
+        "packageName": "[variables('_solutionName')]",
+        "packageId": "[variables('_solutionId')]",
+        "contentSchemaVersion": "3.0.0",
+        "contentId": "[variables('huntingQueryObject4')._huntingQuerycontentId4]",
+        "contentKind": "HuntingQuery",
+        "displayName": "Persisting via IFEO Registry Key",
+        "contentProductId": "[concat(take(variables('_solutionId'),50),'-','hq','-', uniqueString(concat(variables('_solutionId'),'-','HuntingQuery','-',variables('huntingQueryObject4')._huntingQuerycontentId4,'-', '1.0.1')))]",
+        "id": "[concat(take(variables('_solutionId'),50),'-','hq','-', uniqueString(concat(variables('_solutionId'),'-','HuntingQuery','-',variables('huntingQueryObject4')._huntingQuerycontentId4,'-', '1.0.1')))]",
+        "version": "1.0.1"
       }
     },
     {
-      "type": "Microsoft.Resources/templateSpecs",
-      "apiVersion": "2022-02-01",
-      "name": "[variables('huntingQueryTemplateSpecName5')]",
+      "type": "Microsoft.OperationalInsights/workspaces/providers/contentTemplates",
+      "apiVersion": "2023-04-01-preview",
+      "name": "[variables('huntingQueryObject5').huntingQueryTemplateSpecName5]",
       "location": "[parameters('workspace-location')]",
-      "tags": {
-        "hidden-sentinelWorkspaceId": "[variables('workspaceResourceId')]",
-        "hidden-sentinelContentType": "HuntingQuery"
-      },
-      "properties": {
-        "description": "Endpoint Threat Protection Essentials Hunting Query 5 with template",
-        "displayName": "Endpoint Threat Protection Essentials Hunting Query template"
-      }
-    },
-    {
-      "type": "Microsoft.Resources/templateSpecs/versions",
-      "apiVersion": "2022-02-01",
-      "name": "[concat(variables('huntingQueryTemplateSpecName5'),'/',variables('huntingQueryVersion5'))]",
-      "location": "[parameters('workspace-location')]",
-      "tags": {
-        "hidden-sentinelWorkspaceId": "[variables('workspaceResourceId')]",
-        "hidden-sentinelContentType": "HuntingQuery"
-      },
       "dependsOn": [
-        "[resourceId('Microsoft.Resources/templateSpecs', variables('huntingQueryTemplateSpecName5'))]"
+        "[extensionResourceId(resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspace')), 'Microsoft.SecurityInsights/contentPackages', variables('_solutionId'))]"
       ],
       "properties": {
-        "description": "PotentialMicrosoftSecurityServicesTampering_HuntingQueries Hunting Query with template version 2.0.2",
+        "description": "PotentialMicrosoftSecurityServicesTampering_HuntingQueries Hunting Query with template version 3.0.1",
         "mainTemplate": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-          "contentVersion": "[variables('huntingQueryVersion5')]",
+          "contentVersion": "[variables('huntingQueryObject5').huntingQueryVersion5]",
           "parameters": {},
           "variables": {},
           "resources": [
             {
               "type": "Microsoft.OperationalInsights/savedSearches",
-              "apiVersion": "2020-08-01",
+              "apiVersion": "2022-10-01",
               "name": "Endpoint_Threat_Protection_Essentials_Hunting_Query_5",
               "location": "[parameters('workspace-location')]",
               "properties": {
@@ -584,13 +566,13 @@
             {
               "type": "Microsoft.OperationalInsights/workspaces/providers/metadata",
               "apiVersion": "2022-01-01-preview",
-              "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat('HuntingQuery-', last(split(variables('huntingQueryId5'),'/'))))]",
+              "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat('HuntingQuery-', last(split(resourceId('Microsoft.OperationalInsights/savedSearches', variables('huntingQueryObject5')._huntingQuerycontentId5),'/'))))]",
               "properties": {
                 "description": "Endpoint Threat Protection Essentials Hunting Query 5",
-                "parentId": "[variables('huntingQueryId5')]",
-                "contentId": "[variables('_huntingQuerycontentId5')]",
+                "parentId": "[resourceId('Microsoft.OperationalInsights/savedSearches', variables('huntingQueryObject5')._huntingQuerycontentId5)]",
+                "contentId": "[variables('huntingQueryObject5')._huntingQuerycontentId5]",
                 "kind": "HuntingQuery",
-                "version": "[variables('huntingQueryVersion5')]",
+                "version": "[variables('huntingQueryObject5').huntingQueryVersion5]",
                 "source": {
                   "kind": "Solution",
                   "name": "Endpoint Threat Protection Essentials",
@@ -609,46 +591,39 @@
               }
             }
           ]
-        }
+        },
+        "packageKind": "Solution",
+        "packageVersion": "[variables('_solutionVersion')]",
+        "packageName": "[variables('_solutionName')]",
+        "packageId": "[variables('_solutionId')]",
+        "contentSchemaVersion": "3.0.0",
+        "contentId": "[variables('huntingQueryObject5')._huntingQuerycontentId5]",
+        "contentKind": "HuntingQuery",
+        "displayName": "Potential Microsoft Security Services Tampering",
+        "contentProductId": "[concat(take(variables('_solutionId'),50),'-','hq','-', uniqueString(concat(variables('_solutionId'),'-','HuntingQuery','-',variables('huntingQueryObject5')._huntingQuerycontentId5,'-', '1.0.1')))]",
+        "id": "[concat(take(variables('_solutionId'),50),'-','hq','-', uniqueString(concat(variables('_solutionId'),'-','HuntingQuery','-',variables('huntingQueryObject5')._huntingQuerycontentId5,'-', '1.0.1')))]",
+        "version": "1.0.1"
       }
     },
     {
-      "type": "Microsoft.Resources/templateSpecs",
-      "apiVersion": "2022-02-01",
-      "name": "[variables('huntingQueryTemplateSpecName6')]",
+      "type": "Microsoft.OperationalInsights/workspaces/providers/contentTemplates",
+      "apiVersion": "2023-04-01-preview",
+      "name": "[variables('huntingQueryObject6').huntingQueryTemplateSpecName6]",
       "location": "[parameters('workspace-location')]",
-      "tags": {
-        "hidden-sentinelWorkspaceId": "[variables('workspaceResourceId')]",
-        "hidden-sentinelContentType": "HuntingQuery"
-      },
-      "properties": {
-        "description": "Endpoint Threat Protection Essentials Hunting Query 6 with template",
-        "displayName": "Endpoint Threat Protection Essentials Hunting Query template"
-      }
-    },
-    {
-      "type": "Microsoft.Resources/templateSpecs/versions",
-      "apiVersion": "2022-02-01",
-      "name": "[concat(variables('huntingQueryTemplateSpecName6'),'/',variables('huntingQueryVersion6'))]",
-      "location": "[parameters('workspace-location')]",
-      "tags": {
-        "hidden-sentinelWorkspaceId": "[variables('workspaceResourceId')]",
-        "hidden-sentinelContentType": "HuntingQuery"
-      },
       "dependsOn": [
-        "[resourceId('Microsoft.Resources/templateSpecs', variables('huntingQueryTemplateSpecName6'))]"
+        "[extensionResourceId(resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspace')), 'Microsoft.SecurityInsights/contentPackages', variables('_solutionId'))]"
       ],
       "properties": {
-        "description": "RemoteLoginPerformedwithWMI_HuntingQueries Hunting Query with template version 2.0.2",
+        "description": "RemoteLoginPerformedwithWMI_HuntingQueries Hunting Query with template version 3.0.1",
         "mainTemplate": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-          "contentVersion": "[variables('huntingQueryVersion6')]",
+          "contentVersion": "[variables('huntingQueryObject6').huntingQueryVersion6]",
           "parameters": {},
           "variables": {},
           "resources": [
             {
               "type": "Microsoft.OperationalInsights/savedSearches",
-              "apiVersion": "2020-08-01",
+              "apiVersion": "2022-10-01",
               "name": "Endpoint_Threat_Protection_Essentials_Hunting_Query_6",
               "location": "[parameters('workspace-location')]",
               "properties": {
@@ -676,13 +651,13 @@
             {
               "type": "Microsoft.OperationalInsights/workspaces/providers/metadata",
               "apiVersion": "2022-01-01-preview",
-              "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat('HuntingQuery-', last(split(variables('huntingQueryId6'),'/'))))]",
+              "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat('HuntingQuery-', last(split(resourceId('Microsoft.OperationalInsights/savedSearches', variables('huntingQueryObject6')._huntingQuerycontentId6),'/'))))]",
               "properties": {
                 "description": "Endpoint Threat Protection Essentials Hunting Query 6",
-                "parentId": "[variables('huntingQueryId6')]",
-                "contentId": "[variables('_huntingQuerycontentId6')]",
+                "parentId": "[resourceId('Microsoft.OperationalInsights/savedSearches', variables('huntingQueryObject6')._huntingQuerycontentId6)]",
+                "contentId": "[variables('huntingQueryObject6')._huntingQuerycontentId6]",
                 "kind": "HuntingQuery",
-                "version": "[variables('huntingQueryVersion6')]",
+                "version": "[variables('huntingQueryObject6').huntingQueryVersion6]",
                 "source": {
                   "kind": "Solution",
                   "name": "Endpoint Threat Protection Essentials",
@@ -701,46 +676,39 @@
               }
             }
           ]
-        }
+        },
+        "packageKind": "Solution",
+        "packageVersion": "[variables('_solutionVersion')]",
+        "packageName": "[variables('_solutionName')]",
+        "packageId": "[variables('_solutionId')]",
+        "contentSchemaVersion": "3.0.0",
+        "contentId": "[variables('huntingQueryObject6')._huntingQuerycontentId6]",
+        "contentKind": "HuntingQuery",
+        "displayName": "Remote Login Performed with WMI",
+        "contentProductId": "[concat(take(variables('_solutionId'),50),'-','hq','-', uniqueString(concat(variables('_solutionId'),'-','HuntingQuery','-',variables('huntingQueryObject6')._huntingQuerycontentId6,'-', '2.0.0')))]",
+        "id": "[concat(take(variables('_solutionId'),50),'-','hq','-', uniqueString(concat(variables('_solutionId'),'-','HuntingQuery','-',variables('huntingQueryObject6')._huntingQuerycontentId6,'-', '2.0.0')))]",
+        "version": "2.0.0"
       }
     },
     {
-      "type": "Microsoft.Resources/templateSpecs",
-      "apiVersion": "2022-02-01",
-      "name": "[variables('huntingQueryTemplateSpecName7')]",
+      "type": "Microsoft.OperationalInsights/workspaces/providers/contentTemplates",
+      "apiVersion": "2023-04-01-preview",
+      "name": "[variables('huntingQueryObject7').huntingQueryTemplateSpecName7]",
       "location": "[parameters('workspace-location')]",
-      "tags": {
-        "hidden-sentinelWorkspaceId": "[variables('workspaceResourceId')]",
-        "hidden-sentinelContentType": "HuntingQuery"
-      },
-      "properties": {
-        "description": "Endpoint Threat Protection Essentials Hunting Query 7 with template",
-        "displayName": "Endpoint Threat Protection Essentials Hunting Query template"
-      }
-    },
-    {
-      "type": "Microsoft.Resources/templateSpecs/versions",
-      "apiVersion": "2022-02-01",
-      "name": "[concat(variables('huntingQueryTemplateSpecName7'),'/',variables('huntingQueryVersion7'))]",
-      "location": "[parameters('workspace-location')]",
-      "tags": {
-        "hidden-sentinelWorkspaceId": "[variables('workspaceResourceId')]",
-        "hidden-sentinelContentType": "HuntingQuery"
-      },
       "dependsOn": [
-        "[resourceId('Microsoft.Resources/templateSpecs', variables('huntingQueryTemplateSpecName7'))]"
+        "[extensionResourceId(resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspace')), 'Microsoft.SecurityInsights/contentPackages', variables('_solutionId'))]"
       ],
       "properties": {
-        "description": "RemoteScheduledTaskCreationUpdateUsingATSVCNamedPipe_HuntingQueries Hunting Query with template version 2.0.2",
+        "description": "RemoteScheduledTaskCreationUpdateUsingATSVCNamedPipe_HuntingQueries Hunting Query with template version 3.0.1",
         "mainTemplate": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-          "contentVersion": "[variables('huntingQueryVersion7')]",
+          "contentVersion": "[variables('huntingQueryObject7').huntingQueryVersion7]",
           "parameters": {},
           "variables": {},
           "resources": [
             {
               "type": "Microsoft.OperationalInsights/savedSearches",
-              "apiVersion": "2020-08-01",
+              "apiVersion": "2022-10-01",
               "name": "Endpoint_Threat_Protection_Essentials_Hunting_Query_7",
               "location": "[parameters('workspace-location')]",
               "properties": {
@@ -752,7 +720,7 @@
                 "tags": [
                   {
                     "name": "description",
-                    "value": "This query detects a scheduled task, created/updated remotely, using the ATSVC name pipe. \nThreat actors are using scheduled tasks for establishing persistence and moving laterally through the network.\nRef: https://blog.menasec.net/2019/03/threat-hunting-25-scheduled-tasks-for.html"
+                    "value": "This query detects a scheduled task, created/updated remotely, using the ATSVC name pipe. \n Threat actors are using scheduled tasks for establishing persistence and moving laterally through the network."
                   },
                   {
                     "name": "tactics",
@@ -768,13 +736,13 @@
             {
               "type": "Microsoft.OperationalInsights/workspaces/providers/metadata",
               "apiVersion": "2022-01-01-preview",
-              "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat('HuntingQuery-', last(split(variables('huntingQueryId7'),'/'))))]",
+              "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat('HuntingQuery-', last(split(resourceId('Microsoft.OperationalInsights/savedSearches', variables('huntingQueryObject7')._huntingQuerycontentId7),'/'))))]",
               "properties": {
                 "description": "Endpoint Threat Protection Essentials Hunting Query 7",
-                "parentId": "[variables('huntingQueryId7')]",
-                "contentId": "[variables('_huntingQuerycontentId7')]",
+                "parentId": "[resourceId('Microsoft.OperationalInsights/savedSearches', variables('huntingQueryObject7')._huntingQuerycontentId7)]",
+                "contentId": "[variables('huntingQueryObject7')._huntingQuerycontentId7]",
                 "kind": "HuntingQuery",
-                "version": "[variables('huntingQueryVersion7')]",
+                "version": "[variables('huntingQueryObject7').huntingQueryVersion7]",
                 "source": {
                   "kind": "Solution",
                   "name": "Endpoint Threat Protection Essentials",
@@ -793,46 +761,39 @@
               }
             }
           ]
-        }
+        },
+        "packageKind": "Solution",
+        "packageVersion": "[variables('_solutionVersion')]",
+        "packageName": "[variables('_solutionName')]",
+        "packageId": "[variables('_solutionId')]",
+        "contentSchemaVersion": "3.0.0",
+        "contentId": "[variables('huntingQueryObject7')._huntingQuerycontentId7]",
+        "contentKind": "HuntingQuery",
+        "displayName": "Remote Scheduled Task Creation or Update using ATSVC Named Pipe",
+        "contentProductId": "[concat(take(variables('_solutionId'),50),'-','hq','-', uniqueString(concat(variables('_solutionId'),'-','HuntingQuery','-',variables('huntingQueryObject7')._huntingQuerycontentId7,'-', '1.1.0')))]",
+        "id": "[concat(take(variables('_solutionId'),50),'-','hq','-', uniqueString(concat(variables('_solutionId'),'-','HuntingQuery','-',variables('huntingQueryObject7')._huntingQuerycontentId7,'-', '1.1.0')))]",
+        "version": "1.1.0"
       }
     },
     {
-      "type": "Microsoft.Resources/templateSpecs",
-      "apiVersion": "2022-02-01",
-      "name": "[variables('huntingQueryTemplateSpecName8')]",
+      "type": "Microsoft.OperationalInsights/workspaces/providers/contentTemplates",
+      "apiVersion": "2023-04-01-preview",
+      "name": "[variables('huntingQueryObject8').huntingQueryTemplateSpecName8]",
       "location": "[parameters('workspace-location')]",
-      "tags": {
-        "hidden-sentinelWorkspaceId": "[variables('workspaceResourceId')]",
-        "hidden-sentinelContentType": "HuntingQuery"
-      },
-      "properties": {
-        "description": "Endpoint Threat Protection Essentials Hunting Query 8 with template",
-        "displayName": "Endpoint Threat Protection Essentials Hunting Query template"
-      }
-    },
-    {
-      "type": "Microsoft.Resources/templateSpecs/versions",
-      "apiVersion": "2022-02-01",
-      "name": "[concat(variables('huntingQueryTemplateSpecName8'),'/',variables('huntingQueryVersion8'))]",
-      "location": "[parameters('workspace-location')]",
-      "tags": {
-        "hidden-sentinelWorkspaceId": "[variables('workspaceResourceId')]",
-        "hidden-sentinelContentType": "HuntingQuery"
-      },
       "dependsOn": [
-        "[resourceId('Microsoft.Resources/templateSpecs', variables('huntingQueryTemplateSpecName8'))]"
+        "[extensionResourceId(resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspace')), 'Microsoft.SecurityInsights/contentPackages', variables('_solutionId'))]"
       ],
       "properties": {
-        "description": "ScheduledTaskCreationUpdateFromUserWritableDrectory_HuntingQueries Hunting Query with template version 2.0.2",
+        "description": "ScheduledTaskCreationUpdateFromUserWritableDrectory_HuntingQueries Hunting Query with template version 3.0.1",
         "mainTemplate": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-          "contentVersion": "[variables('huntingQueryVersion8')]",
+          "contentVersion": "[variables('huntingQueryObject8').huntingQueryVersion8]",
           "parameters": {},
           "variables": {},
           "resources": [
             {
               "type": "Microsoft.OperationalInsights/savedSearches",
-              "apiVersion": "2020-08-01",
+              "apiVersion": "2022-10-01",
               "name": "Endpoint_Threat_Protection_Essentials_Hunting_Query_8",
               "location": "[parameters('workspace-location')]",
               "properties": {
@@ -860,13 +821,13 @@
             {
               "type": "Microsoft.OperationalInsights/workspaces/providers/metadata",
               "apiVersion": "2022-01-01-preview",
-              "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat('HuntingQuery-', last(split(variables('huntingQueryId8'),'/'))))]",
+              "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat('HuntingQuery-', last(split(resourceId('Microsoft.OperationalInsights/savedSearches', variables('huntingQueryObject8')._huntingQuerycontentId8),'/'))))]",
               "properties": {
                 "description": "Endpoint Threat Protection Essentials Hunting Query 8",
-                "parentId": "[variables('huntingQueryId8')]",
-                "contentId": "[variables('_huntingQuerycontentId8')]",
+                "parentId": "[resourceId('Microsoft.OperationalInsights/savedSearches', variables('huntingQueryObject8')._huntingQuerycontentId8)]",
+                "contentId": "[variables('huntingQueryObject8')._huntingQuerycontentId8]",
                 "kind": "HuntingQuery",
-                "version": "[variables('huntingQueryVersion8')]",
+                "version": "[variables('huntingQueryObject8').huntingQueryVersion8]",
                 "source": {
                   "kind": "Solution",
                   "name": "Endpoint Threat Protection Essentials",
@@ -885,46 +846,39 @@
               }
             }
           ]
-        }
+        },
+        "packageKind": "Solution",
+        "packageVersion": "[variables('_solutionVersion')]",
+        "packageName": "[variables('_solutionName')]",
+        "packageId": "[variables('_solutionId')]",
+        "contentSchemaVersion": "3.0.0",
+        "contentId": "[variables('huntingQueryObject8')._huntingQuerycontentId8]",
+        "contentKind": "HuntingQuery",
+        "displayName": "Scheduled Task Creation or Update from User Writable Directory",
+        "contentProductId": "[concat(take(variables('_solutionId'),50),'-','hq','-', uniqueString(concat(variables('_solutionId'),'-','HuntingQuery','-',variables('huntingQueryObject8')._huntingQuerycontentId8,'-', '1.0.1')))]",
+        "id": "[concat(take(variables('_solutionId'),50),'-','hq','-', uniqueString(concat(variables('_solutionId'),'-','HuntingQuery','-',variables('huntingQueryObject8')._huntingQuerycontentId8,'-', '1.0.1')))]",
+        "version": "1.0.1"
       }
     },
     {
-      "type": "Microsoft.Resources/templateSpecs",
-      "apiVersion": "2022-02-01",
-      "name": "[variables('huntingQueryTemplateSpecName9')]",
+      "type": "Microsoft.OperationalInsights/workspaces/providers/contentTemplates",
+      "apiVersion": "2023-04-01-preview",
+      "name": "[variables('huntingQueryObject9').huntingQueryTemplateSpecName9]",
       "location": "[parameters('workspace-location')]",
-      "tags": {
-        "hidden-sentinelWorkspaceId": "[variables('workspaceResourceId')]",
-        "hidden-sentinelContentType": "HuntingQuery"
-      },
-      "properties": {
-        "description": "Endpoint Threat Protection Essentials Hunting Query 9 with template",
-        "displayName": "Endpoint Threat Protection Essentials Hunting Query template"
-      }
-    },
-    {
-      "type": "Microsoft.Resources/templateSpecs/versions",
-      "apiVersion": "2022-02-01",
-      "name": "[concat(variables('huntingQueryTemplateSpecName9'),'/',variables('huntingQueryVersion9'))]",
-      "location": "[parameters('workspace-location')]",
-      "tags": {
-        "hidden-sentinelWorkspaceId": "[variables('workspaceResourceId')]",
-        "hidden-sentinelContentType": "HuntingQuery"
-      },
       "dependsOn": [
-        "[resourceId('Microsoft.Resources/templateSpecs', variables('huntingQueryTemplateSpecName9'))]"
+        "[extensionResourceId(resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspace')), 'Microsoft.SecurityInsights/contentPackages', variables('_solutionId'))]"
       ],
       "properties": {
-        "description": "SignedBinaryProxyExecutionRundll32_HuntingQueries Hunting Query with template version 2.0.2",
+        "description": "SignedBinaryProxyExecutionRundll32_HuntingQueries Hunting Query with template version 3.0.1",
         "mainTemplate": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-          "contentVersion": "[variables('huntingQueryVersion9')]",
+          "contentVersion": "[variables('huntingQueryObject9').huntingQueryVersion9]",
           "parameters": {},
           "variables": {},
           "resources": [
             {
               "type": "Microsoft.OperationalInsights/savedSearches",
-              "apiVersion": "2020-08-01",
+              "apiVersion": "2022-10-01",
               "name": "Endpoint_Threat_Protection_Essentials_Hunting_Query_9",
               "location": "[parameters('workspace-location')]",
               "properties": {
@@ -952,13 +906,13 @@
             {
               "type": "Microsoft.OperationalInsights/workspaces/providers/metadata",
               "apiVersion": "2022-01-01-preview",
-              "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat('HuntingQuery-', last(split(variables('huntingQueryId9'),'/'))))]",
+              "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat('HuntingQuery-', last(split(resourceId('Microsoft.OperationalInsights/savedSearches', variables('huntingQueryObject9')._huntingQuerycontentId9),'/'))))]",
               "properties": {
                 "description": "Endpoint Threat Protection Essentials Hunting Query 9",
-                "parentId": "[variables('huntingQueryId9')]",
-                "contentId": "[variables('_huntingQuerycontentId9')]",
+                "parentId": "[resourceId('Microsoft.OperationalInsights/savedSearches', variables('huntingQueryObject9')._huntingQuerycontentId9)]",
+                "contentId": "[variables('huntingQueryObject9')._huntingQuerycontentId9]",
                 "kind": "HuntingQuery",
-                "version": "[variables('huntingQueryVersion9')]",
+                "version": "[variables('huntingQueryObject9').huntingQueryVersion9]",
                 "source": {
                   "kind": "Solution",
                   "name": "Endpoint Threat Protection Essentials",
@@ -977,46 +931,39 @@
               }
             }
           ]
-        }
+        },
+        "packageKind": "Solution",
+        "packageVersion": "[variables('_solutionVersion')]",
+        "packageName": "[variables('_solutionName')]",
+        "packageId": "[variables('_solutionId')]",
+        "contentSchemaVersion": "3.0.0",
+        "contentId": "[variables('huntingQueryObject9')._huntingQuerycontentId9]",
+        "contentKind": "HuntingQuery",
+        "displayName": "Rundll32 (LOLBins and LOLScripts)",
+        "contentProductId": "[concat(take(variables('_solutionId'),50),'-','hq','-', uniqueString(concat(variables('_solutionId'),'-','HuntingQuery','-',variables('huntingQueryObject9')._huntingQuerycontentId9,'-', '1.0.1')))]",
+        "id": "[concat(take(variables('_solutionId'),50),'-','hq','-', uniqueString(concat(variables('_solutionId'),'-','HuntingQuery','-',variables('huntingQueryObject9')._huntingQuerycontentId9,'-', '1.0.1')))]",
+        "version": "1.0.1"
       }
     },
     {
-      "type": "Microsoft.Resources/templateSpecs",
-      "apiVersion": "2022-02-01",
-      "name": "[variables('huntingQueryTemplateSpecName10')]",
+      "type": "Microsoft.OperationalInsights/workspaces/providers/contentTemplates",
+      "apiVersion": "2023-04-01-preview",
+      "name": "[variables('huntingQueryObject10').huntingQueryTemplateSpecName10]",
       "location": "[parameters('workspace-location')]",
-      "tags": {
-        "hidden-sentinelWorkspaceId": "[variables('workspaceResourceId')]",
-        "hidden-sentinelContentType": "HuntingQuery"
-      },
-      "properties": {
-        "description": "Endpoint Threat Protection Essentials Hunting Query 10 with template",
-        "displayName": "Endpoint Threat Protection Essentials Hunting Query template"
-      }
-    },
-    {
-      "type": "Microsoft.Resources/templateSpecs/versions",
-      "apiVersion": "2022-02-01",
-      "name": "[concat(variables('huntingQueryTemplateSpecName10'),'/',variables('huntingQueryVersion10'))]",
-      "location": "[parameters('workspace-location')]",
-      "tags": {
-        "hidden-sentinelWorkspaceId": "[variables('workspaceResourceId')]",
-        "hidden-sentinelContentType": "HuntingQuery"
-      },
       "dependsOn": [
-        "[resourceId('Microsoft.Resources/templateSpecs', variables('huntingQueryTemplateSpecName10'))]"
+        "[extensionResourceId(resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspace')), 'Microsoft.SecurityInsights/contentPackages', variables('_solutionId'))]"
       ],
       "properties": {
-        "description": "UnicodeObfuscationInCommandLine_HuntingQueries Hunting Query with template version 2.0.2",
+        "description": "UnicodeObfuscationInCommandLine_HuntingQueries Hunting Query with template version 3.0.1",
         "mainTemplate": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-          "contentVersion": "[variables('huntingQueryVersion10')]",
+          "contentVersion": "[variables('huntingQueryObject10').huntingQueryVersion10]",
           "parameters": {},
           "variables": {},
           "resources": [
             {
               "type": "Microsoft.OperationalInsights/savedSearches",
-              "apiVersion": "2020-08-01",
+              "apiVersion": "2022-10-01",
               "name": "Endpoint_Threat_Protection_Essentials_Hunting_Query_10",
               "location": "[parameters('workspace-location')]",
               "properties": {
@@ -1028,7 +975,7 @@
                 "tags": [
                   {
                     "name": "description",
-                    "value": "The query looks for Command Lines that contain non ASCII characaters. Insertion of these characters could be used to evade detections.\nCommand lines should be reviewed to determine whether inclusion of non ASCII characters was deliberate or not.\nRef: https://www.wietzebeukema.nl/blog/windows-command-line-obfuscation"
+                    "value": "The query looks for Command Lines that contain non ASCII characaters. Insertion of these characters could be used to evade detections.\n Command lines should be reviewed to determine whether inclusion of non ASCII characters was deliberate or not"
                   },
                   {
                     "name": "tactics",
@@ -1044,13 +991,13 @@
             {
               "type": "Microsoft.OperationalInsights/workspaces/providers/metadata",
               "apiVersion": "2022-01-01-preview",
-              "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat('HuntingQuery-', last(split(variables('huntingQueryId10'),'/'))))]",
+              "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat('HuntingQuery-', last(split(resourceId('Microsoft.OperationalInsights/savedSearches', variables('huntingQueryObject10')._huntingQuerycontentId10),'/'))))]",
               "properties": {
                 "description": "Endpoint Threat Protection Essentials Hunting Query 10",
-                "parentId": "[variables('huntingQueryId10')]",
-                "contentId": "[variables('_huntingQuerycontentId10')]",
+                "parentId": "[resourceId('Microsoft.OperationalInsights/savedSearches', variables('huntingQueryObject10')._huntingQuerycontentId10)]",
+                "contentId": "[variables('huntingQueryObject10')._huntingQuerycontentId10]",
                 "kind": "HuntingQuery",
-                "version": "[variables('huntingQueryVersion10')]",
+                "version": "[variables('huntingQueryObject10').huntingQueryVersion10]",
                 "source": {
                   "kind": "Solution",
                   "name": "Endpoint Threat Protection Essentials",
@@ -1069,46 +1016,39 @@
               }
             }
           ]
-        }
+        },
+        "packageKind": "Solution",
+        "packageVersion": "[variables('_solutionVersion')]",
+        "packageName": "[variables('_solutionName')]",
+        "packageId": "[variables('_solutionId')]",
+        "contentSchemaVersion": "3.0.0",
+        "contentId": "[variables('huntingQueryObject10')._huntingQuerycontentId10]",
+        "contentKind": "HuntingQuery",
+        "displayName": "Unicode Obfuscation in Command Line",
+        "contentProductId": "[concat(take(variables('_solutionId'),50),'-','hq','-', uniqueString(concat(variables('_solutionId'),'-','HuntingQuery','-',variables('huntingQueryObject10')._huntingQuerycontentId10,'-', '1.0.1')))]",
+        "id": "[concat(take(variables('_solutionId'),50),'-','hq','-', uniqueString(concat(variables('_solutionId'),'-','HuntingQuery','-',variables('huntingQueryObject10')._huntingQuerycontentId10,'-', '1.0.1')))]",
+        "version": "1.0.1"
       }
     },
     {
-      "type": "Microsoft.Resources/templateSpecs",
-      "apiVersion": "2022-02-01",
-      "name": "[variables('analyticRuleTemplateSpecName1')]",
+      "type": "Microsoft.OperationalInsights/workspaces/providers/contentTemplates",
+      "apiVersion": "2023-04-01-preview",
+      "name": "[variables('analyticRuleObject1').analyticRuleTemplateSpecName1]",
       "location": "[parameters('workspace-location')]",
-      "tags": {
-        "hidden-sentinelWorkspaceId": "[variables('workspaceResourceId')]",
-        "hidden-sentinelContentType": "AnalyticsRule"
-      },
-      "properties": {
-        "description": "Endpoint Threat Protection Essentials Analytics Rule 1 with template",
-        "displayName": "Endpoint Threat Protection Essentials Analytics Rule template"
-      }
-    },
-    {
-      "type": "Microsoft.Resources/templateSpecs/versions",
-      "apiVersion": "2022-02-01",
-      "name": "[concat(variables('analyticRuleTemplateSpecName1'),'/',variables('analyticRuleVersion1'))]",
-      "location": "[parameters('workspace-location')]",
-      "tags": {
-        "hidden-sentinelWorkspaceId": "[variables('workspaceResourceId')]",
-        "hidden-sentinelContentType": "AnalyticsRule"
-      },
       "dependsOn": [
-        "[resourceId('Microsoft.Resources/templateSpecs', variables('analyticRuleTemplateSpecName1'))]"
+        "[extensionResourceId(resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspace')), 'Microsoft.SecurityInsights/contentPackages', variables('_solutionId'))]"
       ],
       "properties": {
-        "description": "base64_encoded_pefile_AnalyticalRules Analytics Rule with template version 2.0.2",
+        "description": "base64_encoded_pefile_AnalyticalRules Analytics Rule with template version 3.0.1",
         "mainTemplate": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-          "contentVersion": "[variables('analyticRuleVersion1')]",
+          "contentVersion": "[variables('analyticRuleObject1').analyticRuleVersion1]",
           "parameters": {},
           "variables": {},
           "resources": [
             {
               "type": "Microsoft.SecurityInsights/AlertRuleTemplates",
-              "name": "[variables('AnalyticRulecontentId1')]",
+              "name": "[variables('analyticRuleObject1')._analyticRulecontentId1]",
               "apiVersion": "2022-04-01-preview",
               "kind": "Scheduled",
               "location": "[parameters('workspace-location')]",
@@ -1162,15 +1102,16 @@
                 ],
                 "entityMappings": [
                   {
+                    "entityType": "Account",
                     "fieldMappings": [
                       {
                         "identifier": "Name",
                         "columnName": "Account"
                       }
-                    ],
-                    "entityType": "Account"
+                    ]
                   },
                   {
+                    "entityType": "Host",
                     "fieldMappings": [
                       {
                         "identifier": "HostName",
@@ -1180,8 +1121,7 @@
                         "identifier": "DnsDomain",
                         "columnName": "DnsDomain"
                       }
-                    ],
-                    "entityType": "Host"
+                    ]
                   }
                 ]
               }
@@ -1189,13 +1129,13 @@
             {
               "type": "Microsoft.OperationalInsights/workspaces/providers/metadata",
               "apiVersion": "2022-01-01-preview",
-              "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat('AnalyticsRule-', last(split(variables('analyticRuleId1'),'/'))))]",
+              "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat('AnalyticsRule-', last(split(variables('analyticRuleObject1').analyticRuleId1,'/'))))]",
               "properties": {
                 "description": "Endpoint Threat Protection Essentials Analytics Rule 1",
-                "parentId": "[variables('analyticRuleId1')]",
-                "contentId": "[variables('_analyticRulecontentId1')]",
+                "parentId": "[variables('analyticRuleObject1').analyticRuleId1]",
+                "contentId": "[variables('analyticRuleObject1')._analyticRulecontentId1]",
                 "kind": "AnalyticsRule",
-                "version": "[variables('analyticRuleVersion1')]",
+                "version": "[variables('analyticRuleObject1').analyticRuleVersion1]",
                 "source": {
                   "kind": "Solution",
                   "name": "Endpoint Threat Protection Essentials",
@@ -1214,46 +1154,39 @@
               }
             }
           ]
-        }
+        },
+        "packageKind": "Solution",
+        "packageVersion": "[variables('_solutionVersion')]",
+        "packageName": "[variables('_solutionName')]",
+        "packageId": "[variables('_solutionId')]",
+        "contentSchemaVersion": "3.0.0",
+        "contentId": "[variables('analyticRuleObject1')._analyticRulecontentId1]",
+        "contentKind": "AnalyticsRule",
+        "displayName": "Base64 encoded Windows process command-lines",
+        "contentProductId": "[variables('analyticRuleObject1')._analyticRulecontentProductId1]",
+        "id": "[variables('analyticRuleObject1')._analyticRulecontentProductId1]",
+        "version": "[variables('analyticRuleObject1').analyticRuleVersion1]"
       }
     },
     {
-      "type": "Microsoft.Resources/templateSpecs",
-      "apiVersion": "2022-02-01",
-      "name": "[variables('analyticRuleTemplateSpecName2')]",
+      "type": "Microsoft.OperationalInsights/workspaces/providers/contentTemplates",
+      "apiVersion": "2023-04-01-preview",
+      "name": "[variables('analyticRuleObject2').analyticRuleTemplateSpecName2]",
       "location": "[parameters('workspace-location')]",
-      "tags": {
-        "hidden-sentinelWorkspaceId": "[variables('workspaceResourceId')]",
-        "hidden-sentinelContentType": "AnalyticsRule"
-      },
-      "properties": {
-        "description": "Endpoint Threat Protection Essentials Analytics Rule 2 with template",
-        "displayName": "Endpoint Threat Protection Essentials Analytics Rule template"
-      }
-    },
-    {
-      "type": "Microsoft.Resources/templateSpecs/versions",
-      "apiVersion": "2022-02-01",
-      "name": "[concat(variables('analyticRuleTemplateSpecName2'),'/',variables('analyticRuleVersion2'))]",
-      "location": "[parameters('workspace-location')]",
-      "tags": {
-        "hidden-sentinelWorkspaceId": "[variables('workspaceResourceId')]",
-        "hidden-sentinelContentType": "AnalyticsRule"
-      },
       "dependsOn": [
-        "[resourceId('Microsoft.Resources/templateSpecs', variables('analyticRuleTemplateSpecName2'))]"
+        "[extensionResourceId(resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspace')), 'Microsoft.SecurityInsights/contentPackages', variables('_solutionId'))]"
       ],
       "properties": {
-        "description": "DumpingLSASSProcessIntoaFile_AnalyticalRules Analytics Rule with template version 2.0.2",
+        "description": "DumpingLSASSProcessIntoaFile_AnalyticalRules Analytics Rule with template version 3.0.1",
         "mainTemplate": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-          "contentVersion": "[variables('analyticRuleVersion2')]",
+          "contentVersion": "[variables('analyticRuleObject2').analyticRuleVersion2]",
           "parameters": {},
           "variables": {},
           "resources": [
             {
               "type": "Microsoft.SecurityInsights/AlertRuleTemplates",
-              "name": "[variables('AnalyticRulecontentId2')]",
+              "name": "[variables('analyticRuleObject2')._analyticRulecontentId2]",
               "apiVersion": "2022-04-01-preview",
               "kind": "Scheduled",
               "location": "[parameters('workspace-location')]",
@@ -1281,11 +1214,15 @@
                 "tactics": [
                   "CredentialAccess"
                 ],
+                "subTechniques": [
+                  "T1003.001"
+                ],
                 "techniques": [
                   "T1003"
                 ],
                 "entityMappings": [
                   {
+                    "entityType": "Host",
                     "fieldMappings": [
                       {
                         "identifier": "HostName",
@@ -1295,17 +1232,16 @@
                         "identifier": "DnsDomain",
                         "columnName": "DnsDomain"
                       }
-                    ],
-                    "entityType": "Host"
+                    ]
                   },
                   {
+                    "entityType": "Process",
                     "fieldMappings": [
                       {
                         "identifier": "CommandLine",
                         "columnName": "SourceImage"
                       }
-                    ],
-                    "entityType": "Process"
+                    ]
                   }
                 ]
               }
@@ -1313,13 +1249,13 @@
             {
               "type": "Microsoft.OperationalInsights/workspaces/providers/metadata",
               "apiVersion": "2022-01-01-preview",
-              "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat('AnalyticsRule-', last(split(variables('analyticRuleId2'),'/'))))]",
+              "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat('AnalyticsRule-', last(split(variables('analyticRuleObject2').analyticRuleId2,'/'))))]",
               "properties": {
                 "description": "Endpoint Threat Protection Essentials Analytics Rule 2",
-                "parentId": "[variables('analyticRuleId2')]",
-                "contentId": "[variables('_analyticRulecontentId2')]",
+                "parentId": "[variables('analyticRuleObject2').analyticRuleId2]",
+                "contentId": "[variables('analyticRuleObject2')._analyticRulecontentId2]",
                 "kind": "AnalyticsRule",
-                "version": "[variables('analyticRuleVersion2')]",
+                "version": "[variables('analyticRuleObject2').analyticRuleVersion2]",
                 "source": {
                   "kind": "Solution",
                   "name": "Endpoint Threat Protection Essentials",
@@ -1338,46 +1274,39 @@
               }
             }
           ]
-        }
+        },
+        "packageKind": "Solution",
+        "packageVersion": "[variables('_solutionVersion')]",
+        "packageName": "[variables('_solutionName')]",
+        "packageId": "[variables('_solutionId')]",
+        "contentSchemaVersion": "3.0.0",
+        "contentId": "[variables('analyticRuleObject2')._analyticRulecontentId2]",
+        "contentKind": "AnalyticsRule",
+        "displayName": "Dumping LSASS Process Into a File",
+        "contentProductId": "[variables('analyticRuleObject2')._analyticRulecontentProductId2]",
+        "id": "[variables('analyticRuleObject2')._analyticRulecontentProductId2]",
+        "version": "[variables('analyticRuleObject2').analyticRuleVersion2]"
       }
     },
     {
-      "type": "Microsoft.Resources/templateSpecs",
-      "apiVersion": "2022-02-01",
-      "name": "[variables('analyticRuleTemplateSpecName3')]",
+      "type": "Microsoft.OperationalInsights/workspaces/providers/contentTemplates",
+      "apiVersion": "2023-04-01-preview",
+      "name": "[variables('analyticRuleObject3').analyticRuleTemplateSpecName3]",
       "location": "[parameters('workspace-location')]",
-      "tags": {
-        "hidden-sentinelWorkspaceId": "[variables('workspaceResourceId')]",
-        "hidden-sentinelContentType": "AnalyticsRule"
-      },
-      "properties": {
-        "description": "Endpoint Threat Protection Essentials Analytics Rule 3 with template",
-        "displayName": "Endpoint Threat Protection Essentials Analytics Rule template"
-      }
-    },
-    {
-      "type": "Microsoft.Resources/templateSpecs/versions",
-      "apiVersion": "2022-02-01",
-      "name": "[concat(variables('analyticRuleTemplateSpecName3'),'/',variables('analyticRuleVersion3'))]",
-      "location": "[parameters('workspace-location')]",
-      "tags": {
-        "hidden-sentinelWorkspaceId": "[variables('workspaceResourceId')]",
-        "hidden-sentinelContentType": "AnalyticsRule"
-      },
       "dependsOn": [
-        "[resourceId('Microsoft.Resources/templateSpecs', variables('analyticRuleTemplateSpecName3'))]"
+        "[extensionResourceId(resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspace')), 'Microsoft.SecurityInsights/contentPackages', variables('_solutionId'))]"
       ],
       "properties": {
-        "description": "execute_base64_decodedpayload_AnalyticalRules Analytics Rule with template version 2.0.2",
+        "description": "execute_base64_decodedpayload_AnalyticalRules Analytics Rule with template version 3.0.1",
         "mainTemplate": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-          "contentVersion": "[variables('analyticRuleVersion3')]",
+          "contentVersion": "[variables('analyticRuleObject3').analyticRuleVersion3]",
           "parameters": {},
           "variables": {},
           "resources": [
             {
               "type": "Microsoft.SecurityInsights/AlertRuleTemplates",
-              "name": "[variables('AnalyticRulecontentId3')]",
+              "name": "[variables('analyticRuleObject3')._analyticRulecontentId3]",
               "apiVersion": "2022-04-01-preview",
               "kind": "Scheduled",
               "location": "[parameters('workspace-location')]",
@@ -1431,15 +1360,16 @@
                 ],
                 "entityMappings": [
                   {
+                    "entityType": "Account",
                     "fieldMappings": [
                       {
                         "identifier": "Name",
                         "columnName": "Account"
                       }
-                    ],
-                    "entityType": "Account"
+                    ]
                   },
                   {
+                    "entityType": "Host",
                     "fieldMappings": [
                       {
                         "identifier": "HostName",
@@ -1449,8 +1379,7 @@
                         "identifier": "DnsDomain",
                         "columnName": "DnsDomain"
                       }
-                    ],
-                    "entityType": "Host"
+                    ]
                   }
                 ]
               }
@@ -1458,13 +1387,13 @@
             {
               "type": "Microsoft.OperationalInsights/workspaces/providers/metadata",
               "apiVersion": "2022-01-01-preview",
-              "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat('AnalyticsRule-', last(split(variables('analyticRuleId3'),'/'))))]",
+              "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat('AnalyticsRule-', last(split(variables('analyticRuleObject3').analyticRuleId3,'/'))))]",
               "properties": {
                 "description": "Endpoint Threat Protection Essentials Analytics Rule 3",
-                "parentId": "[variables('analyticRuleId3')]",
-                "contentId": "[variables('_analyticRulecontentId3')]",
+                "parentId": "[variables('analyticRuleObject3').analyticRuleId3]",
+                "contentId": "[variables('analyticRuleObject3')._analyticRulecontentId3]",
                 "kind": "AnalyticsRule",
-                "version": "[variables('analyticRuleVersion3')]",
+                "version": "[variables('analyticRuleObject3').analyticRuleVersion3]",
                 "source": {
                   "kind": "Solution",
                   "name": "Endpoint Threat Protection Essentials",
@@ -1483,46 +1412,39 @@
               }
             }
           ]
-        }
+        },
+        "packageKind": "Solution",
+        "packageVersion": "[variables('_solutionVersion')]",
+        "packageName": "[variables('_solutionName')]",
+        "packageId": "[variables('_solutionId')]",
+        "contentSchemaVersion": "3.0.0",
+        "contentId": "[variables('analyticRuleObject3')._analyticRulecontentId3]",
+        "contentKind": "AnalyticsRule",
+        "displayName": "Process executed from binary hidden in Base64 encoded file",
+        "contentProductId": "[variables('analyticRuleObject3')._analyticRulecontentProductId3]",
+        "id": "[variables('analyticRuleObject3')._analyticRulecontentProductId3]",
+        "version": "[variables('analyticRuleObject3').analyticRuleVersion3]"
       }
     },
     {
-      "type": "Microsoft.Resources/templateSpecs",
-      "apiVersion": "2022-02-01",
-      "name": "[variables('analyticRuleTemplateSpecName4')]",
+      "type": "Microsoft.OperationalInsights/workspaces/providers/contentTemplates",
+      "apiVersion": "2023-04-01-preview",
+      "name": "[variables('analyticRuleObject4').analyticRuleTemplateSpecName4]",
       "location": "[parameters('workspace-location')]",
-      "tags": {
-        "hidden-sentinelWorkspaceId": "[variables('workspaceResourceId')]",
-        "hidden-sentinelContentType": "AnalyticsRule"
-      },
-      "properties": {
-        "description": "Endpoint Threat Protection Essentials Analytics Rule 4 with template",
-        "displayName": "Endpoint Threat Protection Essentials Analytics Rule template"
-      }
-    },
-    {
-      "type": "Microsoft.Resources/templateSpecs/versions",
-      "apiVersion": "2022-02-01",
-      "name": "[concat(variables('analyticRuleTemplateSpecName4'),'/',variables('analyticRuleVersion4'))]",
-      "location": "[parameters('workspace-location')]",
-      "tags": {
-        "hidden-sentinelWorkspaceId": "[variables('workspaceResourceId')]",
-        "hidden-sentinelContentType": "AnalyticsRule"
-      },
       "dependsOn": [
-        "[resourceId('Microsoft.Resources/templateSpecs', variables('analyticRuleTemplateSpecName4'))]"
+        "[extensionResourceId(resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspace')), 'Microsoft.SecurityInsights/contentPackages', variables('_solutionId'))]"
       ],
       "properties": {
-        "description": "LateralMovementViaDCOM_AnalyticalRules Analytics Rule with template version 2.0.2",
+        "description": "LateralMovementViaDCOM_AnalyticalRules Analytics Rule with template version 3.0.1",
         "mainTemplate": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-          "contentVersion": "[variables('analyticRuleVersion4')]",
+          "contentVersion": "[variables('analyticRuleObject4').analyticRuleVersion4]",
           "parameters": {},
           "variables": {},
           "resources": [
             {
               "type": "Microsoft.SecurityInsights/AlertRuleTemplates",
-              "name": "[variables('AnalyticRulecontentId4')]",
+              "name": "[variables('analyticRuleObject4')._analyticRulecontentId4]",
               "apiVersion": "2022-04-01-preview",
               "kind": "Scheduled",
               "location": "[parameters('workspace-location')]",
@@ -1550,20 +1472,24 @@
                 "tactics": [
                   "LateralMovement"
                 ],
+                "subTechniques": [
+                  "T1021.003"
+                ],
                 "techniques": [
                   "T1021"
                 ],
                 "entityMappings": [
                   {
+                    "entityType": "Process",
                     "fieldMappings": [
                       {
                         "identifier": "CommandLine",
                         "columnName": "CommandLine"
                       }
-                    ],
-                    "entityType": "Process"
+                    ]
                   },
                   {
+                    "entityType": "Host",
                     "fieldMappings": [
                       {
                         "identifier": "HostName",
@@ -1573,17 +1499,16 @@
                         "identifier": "DnsDomain",
                         "columnName": "DnsDomain"
                       }
-                    ],
-                    "entityType": "Host"
+                    ]
                   },
                   {
+                    "entityType": "Account",
                     "fieldMappings": [
                       {
                         "identifier": "Name",
                         "columnName": "User"
                       }
-                    ],
-                    "entityType": "Account"
+                    ]
                   }
                 ]
               }
@@ -1591,13 +1516,13 @@
             {
               "type": "Microsoft.OperationalInsights/workspaces/providers/metadata",
               "apiVersion": "2022-01-01-preview",
-              "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat('AnalyticsRule-', last(split(variables('analyticRuleId4'),'/'))))]",
+              "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat('AnalyticsRule-', last(split(variables('analyticRuleObject4').analyticRuleId4,'/'))))]",
               "properties": {
                 "description": "Endpoint Threat Protection Essentials Analytics Rule 4",
-                "parentId": "[variables('analyticRuleId4')]",
-                "contentId": "[variables('_analyticRulecontentId4')]",
+                "parentId": "[variables('analyticRuleObject4').analyticRuleId4]",
+                "contentId": "[variables('analyticRuleObject4')._analyticRulecontentId4]",
                 "kind": "AnalyticsRule",
-                "version": "[variables('analyticRuleVersion4')]",
+                "version": "[variables('analyticRuleObject4').analyticRuleVersion4]",
                 "source": {
                   "kind": "Solution",
                   "name": "Endpoint Threat Protection Essentials",
@@ -1616,46 +1541,39 @@
               }
             }
           ]
-        }
+        },
+        "packageKind": "Solution",
+        "packageVersion": "[variables('_solutionVersion')]",
+        "packageName": "[variables('_solutionName')]",
+        "packageId": "[variables('_solutionId')]",
+        "contentSchemaVersion": "3.0.0",
+        "contentId": "[variables('analyticRuleObject4')._analyticRulecontentId4]",
+        "contentKind": "AnalyticsRule",
+        "displayName": "Lateral Movement via DCOM",
+        "contentProductId": "[variables('analyticRuleObject4')._analyticRulecontentProductId4]",
+        "id": "[variables('analyticRuleObject4')._analyticRulecontentProductId4]",
+        "version": "[variables('analyticRuleObject4').analyticRuleVersion4]"
       }
     },
     {
-      "type": "Microsoft.Resources/templateSpecs",
-      "apiVersion": "2022-02-01",
-      "name": "[variables('analyticRuleTemplateSpecName5')]",
+      "type": "Microsoft.OperationalInsights/workspaces/providers/contentTemplates",
+      "apiVersion": "2023-04-01-preview",
+      "name": "[variables('analyticRuleObject5').analyticRuleTemplateSpecName5]",
       "location": "[parameters('workspace-location')]",
-      "tags": {
-        "hidden-sentinelWorkspaceId": "[variables('workspaceResourceId')]",
-        "hidden-sentinelContentType": "AnalyticsRule"
-      },
-      "properties": {
-        "description": "Endpoint Threat Protection Essentials Analytics Rule 5 with template",
-        "displayName": "Endpoint Threat Protection Essentials Analytics Rule template"
-      }
-    },
-    {
-      "type": "Microsoft.Resources/templateSpecs/versions",
-      "apiVersion": "2022-02-01",
-      "name": "[concat(variables('analyticRuleTemplateSpecName5'),'/',variables('analyticRuleVersion5'))]",
-      "location": "[parameters('workspace-location')]",
-      "tags": {
-        "hidden-sentinelWorkspaceId": "[variables('workspaceResourceId')]",
-        "hidden-sentinelContentType": "AnalyticsRule"
-      },
       "dependsOn": [
-        "[resourceId('Microsoft.Resources/templateSpecs', variables('analyticRuleTemplateSpecName5'))]"
+        "[extensionResourceId(resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspace')), 'Microsoft.SecurityInsights/contentPackages', variables('_solutionId'))]"
       ],
       "properties": {
-        "description": "MacroInvokingShellBrowserWindowCOMObjects_AnalyticalRules Analytics Rule with template version 2.0.2",
+        "description": "MacroInvokingShellBrowserWindowCOMObjects_AnalyticalRules Analytics Rule with template version 3.0.1",
         "mainTemplate": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-          "contentVersion": "[variables('analyticRuleVersion5')]",
+          "contentVersion": "[variables('analyticRuleObject5').analyticRuleVersion5]",
           "parameters": {},
           "variables": {},
           "resources": [
             {
               "type": "Microsoft.SecurityInsights/AlertRuleTemplates",
-              "name": "[variables('AnalyticRulecontentId5')]",
+              "name": "[variables('analyticRuleObject5')._analyticRulecontentId5]",
               "apiVersion": "2022-04-01-preview",
               "kind": "Scheduled",
               "location": "[parameters('workspace-location')]",
@@ -1683,20 +1601,24 @@
                 "tactics": [
                   "LateralMovement"
                 ],
+                "subTechniques": [
+                  "T1021.003"
+                ],
                 "techniques": [
                   "T1021"
                 ],
                 "entityMappings": [
                   {
+                    "entityType": "Process",
                     "fieldMappings": [
                       {
                         "identifier": "CommandLine",
                         "columnName": "CommandLine"
                       }
-                    ],
-                    "entityType": "Process"
+                    ]
                   },
                   {
+                    "entityType": "Host",
                     "fieldMappings": [
                       {
                         "identifier": "HostName",
@@ -1706,17 +1628,16 @@
                         "identifier": "DnsDomain",
                         "columnName": "DnsDomain"
                       }
-                    ],
-                    "entityType": "Host"
+                    ]
                   },
                   {
+                    "entityType": "Account",
                     "fieldMappings": [
                       {
                         "identifier": "Name",
                         "columnName": "User"
                       }
-                    ],
-                    "entityType": "Account"
+                    ]
                   }
                 ]
               }
@@ -1724,13 +1645,13 @@
             {
               "type": "Microsoft.OperationalInsights/workspaces/providers/metadata",
               "apiVersion": "2022-01-01-preview",
-              "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat('AnalyticsRule-', last(split(variables('analyticRuleId5'),'/'))))]",
+              "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat('AnalyticsRule-', last(split(variables('analyticRuleObject5').analyticRuleId5,'/'))))]",
               "properties": {
                 "description": "Endpoint Threat Protection Essentials Analytics Rule 5",
-                "parentId": "[variables('analyticRuleId5')]",
-                "contentId": "[variables('_analyticRulecontentId5')]",
+                "parentId": "[variables('analyticRuleObject5').analyticRuleId5]",
+                "contentId": "[variables('analyticRuleObject5')._analyticRulecontentId5]",
                 "kind": "AnalyticsRule",
-                "version": "[variables('analyticRuleVersion5')]",
+                "version": "[variables('analyticRuleObject5').analyticRuleVersion5]",
                 "source": {
                   "kind": "Solution",
                   "name": "Endpoint Threat Protection Essentials",
@@ -1749,46 +1670,39 @@
               }
             }
           ]
-        }
+        },
+        "packageKind": "Solution",
+        "packageVersion": "[variables('_solutionVersion')]",
+        "packageName": "[variables('_solutionName')]",
+        "packageId": "[variables('_solutionId')]",
+        "contentSchemaVersion": "3.0.0",
+        "contentId": "[variables('analyticRuleObject5')._analyticRulecontentId5]",
+        "contentKind": "AnalyticsRule",
+        "displayName": "Detecting Macro Invoking ShellBrowserWindow COM Objects",
+        "contentProductId": "[variables('analyticRuleObject5')._analyticRulecontentProductId5]",
+        "id": "[variables('analyticRuleObject5')._analyticRulecontentProductId5]",
+        "version": "[variables('analyticRuleObject5').analyticRuleVersion5]"
       }
     },
     {
-      "type": "Microsoft.Resources/templateSpecs",
-      "apiVersion": "2022-02-01",
-      "name": "[variables('analyticRuleTemplateSpecName6')]",
+      "type": "Microsoft.OperationalInsights/workspaces/providers/contentTemplates",
+      "apiVersion": "2023-04-01-preview",
+      "name": "[variables('analyticRuleObject6').analyticRuleTemplateSpecName6]",
       "location": "[parameters('workspace-location')]",
-      "tags": {
-        "hidden-sentinelWorkspaceId": "[variables('workspaceResourceId')]",
-        "hidden-sentinelContentType": "AnalyticsRule"
-      },
-      "properties": {
-        "description": "Endpoint Threat Protection Essentials Analytics Rule 6 with template",
-        "displayName": "Endpoint Threat Protection Essentials Analytics Rule template"
-      }
-    },
-    {
-      "type": "Microsoft.Resources/templateSpecs/versions",
-      "apiVersion": "2022-02-01",
-      "name": "[concat(variables('analyticRuleTemplateSpecName6'),'/',variables('analyticRuleVersion6'))]",
-      "location": "[parameters('workspace-location')]",
-      "tags": {
-        "hidden-sentinelWorkspaceId": "[variables('workspaceResourceId')]",
-        "hidden-sentinelContentType": "AnalyticsRule"
-      },
       "dependsOn": [
-        "[resourceId('Microsoft.Resources/templateSpecs', variables('analyticRuleTemplateSpecName6'))]"
+        "[extensionResourceId(resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspace')), 'Microsoft.SecurityInsights/contentPackages', variables('_solutionId'))]"
       ],
       "properties": {
-        "description": "malware_in_recyclebin_AnalyticalRules Analytics Rule with template version 2.0.2",
+        "description": "malware_in_recyclebin_AnalyticalRules Analytics Rule with template version 3.0.1",
         "mainTemplate": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-          "contentVersion": "[variables('analyticRuleVersion6')]",
+          "contentVersion": "[variables('analyticRuleObject6').analyticRuleVersion6]",
           "parameters": {},
           "variables": {},
           "resources": [
             {
               "type": "Microsoft.SecurityInsights/AlertRuleTemplates",
-              "name": "[variables('AnalyticRulecontentId6')]",
+              "name": "[variables('analyticRuleObject6')._analyticRulecontentId6]",
               "apiVersion": "2022-04-01-preview",
               "kind": "Scheduled",
               "location": "[parameters('workspace-location')]",
@@ -1836,15 +1750,16 @@
                 ],
                 "entityMappings": [
                   {
+                    "entityType": "Account",
                     "fieldMappings": [
                       {
                         "identifier": "Name",
                         "columnName": "Account"
                       }
-                    ],
-                    "entityType": "Account"
+                    ]
                   },
                   {
+                    "entityType": "Host",
                     "fieldMappings": [
                       {
                         "identifier": "HostName",
@@ -1854,8 +1769,7 @@
                         "identifier": "DnsDomain",
                         "columnName": "DnsDomain"
                       }
-                    ],
-                    "entityType": "Host"
+                    ]
                   }
                 ]
               }
@@ -1863,13 +1777,13 @@
             {
               "type": "Microsoft.OperationalInsights/workspaces/providers/metadata",
               "apiVersion": "2022-01-01-preview",
-              "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat('AnalyticsRule-', last(split(variables('analyticRuleId6'),'/'))))]",
+              "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat('AnalyticsRule-', last(split(variables('analyticRuleObject6').analyticRuleId6,'/'))))]",
               "properties": {
                 "description": "Endpoint Threat Protection Essentials Analytics Rule 6",
-                "parentId": "[variables('analyticRuleId6')]",
-                "contentId": "[variables('_analyticRulecontentId6')]",
+                "parentId": "[variables('analyticRuleObject6').analyticRuleId6]",
+                "contentId": "[variables('analyticRuleObject6')._analyticRulecontentId6]",
                 "kind": "AnalyticsRule",
-                "version": "[variables('analyticRuleVersion6')]",
+                "version": "[variables('analyticRuleObject6').analyticRuleVersion6]",
                 "source": {
                   "kind": "Solution",
                   "name": "Endpoint Threat Protection Essentials",
@@ -1888,46 +1802,39 @@
               }
             }
           ]
-        }
+        },
+        "packageKind": "Solution",
+        "packageVersion": "[variables('_solutionVersion')]",
+        "packageName": "[variables('_solutionName')]",
+        "packageId": "[variables('_solutionId')]",
+        "contentSchemaVersion": "3.0.0",
+        "contentId": "[variables('analyticRuleObject6')._analyticRulecontentId6]",
+        "contentKind": "AnalyticsRule",
+        "displayName": "Malware in the recycle bin",
+        "contentProductId": "[variables('analyticRuleObject6')._analyticRulecontentProductId6]",
+        "id": "[variables('analyticRuleObject6')._analyticRulecontentProductId6]",
+        "version": "[variables('analyticRuleObject6').analyticRuleVersion6]"
       }
     },
     {
-      "type": "Microsoft.Resources/templateSpecs",
-      "apiVersion": "2022-02-01",
-      "name": "[variables('analyticRuleTemplateSpecName7')]",
+      "type": "Microsoft.OperationalInsights/workspaces/providers/contentTemplates",
+      "apiVersion": "2023-04-01-preview",
+      "name": "[variables('analyticRuleObject7').analyticRuleTemplateSpecName7]",
       "location": "[parameters('workspace-location')]",
-      "tags": {
-        "hidden-sentinelWorkspaceId": "[variables('workspaceResourceId')]",
-        "hidden-sentinelContentType": "AnalyticsRule"
-      },
-      "properties": {
-        "description": "Endpoint Threat Protection Essentials Analytics Rule 7 with template",
-        "displayName": "Endpoint Threat Protection Essentials Analytics Rule template"
-      }
-    },
-    {
-      "type": "Microsoft.Resources/templateSpecs/versions",
-      "apiVersion": "2022-02-01",
-      "name": "[concat(variables('analyticRuleTemplateSpecName7'),'/',variables('analyticRuleVersion7'))]",
-      "location": "[parameters('workspace-location')]",
-      "tags": {
-        "hidden-sentinelWorkspaceId": "[variables('workspaceResourceId')]",
-        "hidden-sentinelContentType": "AnalyticsRule"
-      },
       "dependsOn": [
-        "[resourceId('Microsoft.Resources/templateSpecs', variables('analyticRuleTemplateSpecName7'))]"
+        "[extensionResourceId(resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspace')), 'Microsoft.SecurityInsights/contentPackages', variables('_solutionId'))]"
       ],
       "properties": {
-        "description": "PotentialRemoteDesktopTunneling_AnalyticalRules Analytics Rule with template version 2.0.2",
+        "description": "PotentialRemoteDesktopTunneling_AnalyticalRules Analytics Rule with template version 3.0.1",
         "mainTemplate": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-          "contentVersion": "[variables('analyticRuleVersion7')]",
+          "contentVersion": "[variables('analyticRuleObject7').analyticRuleVersion7]",
           "parameters": {},
           "variables": {},
           "resources": [
             {
               "type": "Microsoft.SecurityInsights/AlertRuleTemplates",
-              "name": "[variables('AnalyticRulecontentId7')]",
+              "name": "[variables('analyticRuleObject7')._analyticRulecontentId7]",
               "apiVersion": "2022-04-01-preview",
               "kind": "Scheduled",
               "location": "[parameters('workspace-location')]",
@@ -1960,6 +1867,7 @@
                 ],
                 "entityMappings": [
                   {
+                    "entityType": "Account",
                     "fieldMappings": [
                       {
                         "identifier": "Name",
@@ -1969,10 +1877,10 @@
                         "identifier": "UPNSuffix",
                         "columnName": "UPNSuffix"
                       }
-                    ],
-                    "entityType": "Account"
+                    ]
                   },
                   {
+                    "entityType": "Host",
                     "fieldMappings": [
                       {
                         "identifier": "HostName",
@@ -1982,17 +1890,16 @@
                         "identifier": "DnsDomain",
                         "columnName": "DnsDomain"
                       }
-                    ],
-                    "entityType": "Host"
+                    ]
                   },
                   {
+                    "entityType": "IP",
                     "fieldMappings": [
                       {
                         "identifier": "Address",
                         "columnName": "IpAddress"
                       }
-                    ],
-                    "entityType": "IP"
+                    ]
                   }
                 ]
               }
@@ -2000,13 +1907,13 @@
             {
               "type": "Microsoft.OperationalInsights/workspaces/providers/metadata",
               "apiVersion": "2022-01-01-preview",
-              "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat('AnalyticsRule-', last(split(variables('analyticRuleId7'),'/'))))]",
+              "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat('AnalyticsRule-', last(split(variables('analyticRuleObject7').analyticRuleId7,'/'))))]",
               "properties": {
                 "description": "Endpoint Threat Protection Essentials Analytics Rule 7",
-                "parentId": "[variables('analyticRuleId7')]",
-                "contentId": "[variables('_analyticRulecontentId7')]",
+                "parentId": "[variables('analyticRuleObject7').analyticRuleId7]",
+                "contentId": "[variables('analyticRuleObject7')._analyticRulecontentId7]",
                 "kind": "AnalyticsRule",
-                "version": "[variables('analyticRuleVersion7')]",
+                "version": "[variables('analyticRuleObject7').analyticRuleVersion7]",
                 "source": {
                   "kind": "Solution",
                   "name": "Endpoint Threat Protection Essentials",
@@ -2025,46 +1932,39 @@
               }
             }
           ]
-        }
+        },
+        "packageKind": "Solution",
+        "packageVersion": "[variables('_solutionVersion')]",
+        "packageName": "[variables('_solutionName')]",
+        "packageId": "[variables('_solutionId')]",
+        "contentSchemaVersion": "3.0.0",
+        "contentId": "[variables('analyticRuleObject7')._analyticRulecontentId7]",
+        "contentKind": "AnalyticsRule",
+        "displayName": "Potential Remote Desktop Tunneling",
+        "contentProductId": "[variables('analyticRuleObject7')._analyticRulecontentProductId7]",
+        "id": "[variables('analyticRuleObject7')._analyticRulecontentProductId7]",
+        "version": "[variables('analyticRuleObject7').analyticRuleVersion7]"
       }
     },
     {
-      "type": "Microsoft.Resources/templateSpecs",
-      "apiVersion": "2022-02-01",
-      "name": "[variables('analyticRuleTemplateSpecName8')]",
+      "type": "Microsoft.OperationalInsights/workspaces/providers/contentTemplates",
+      "apiVersion": "2023-04-01-preview",
+      "name": "[variables('analyticRuleObject8').analyticRuleTemplateSpecName8]",
       "location": "[parameters('workspace-location')]",
-      "tags": {
-        "hidden-sentinelWorkspaceId": "[variables('workspaceResourceId')]",
-        "hidden-sentinelContentType": "AnalyticsRule"
-      },
-      "properties": {
-        "description": "Endpoint Threat Protection Essentials Analytics Rule 8 with template",
-        "displayName": "Endpoint Threat Protection Essentials Analytics Rule template"
-      }
-    },
-    {
-      "type": "Microsoft.Resources/templateSpecs/versions",
-      "apiVersion": "2022-02-01",
-      "name": "[concat(variables('analyticRuleTemplateSpecName8'),'/',variables('analyticRuleVersion8'))]",
-      "location": "[parameters('workspace-location')]",
-      "tags": {
-        "hidden-sentinelWorkspaceId": "[variables('workspaceResourceId')]",
-        "hidden-sentinelContentType": "AnalyticsRule"
-      },
       "dependsOn": [
-        "[resourceId('Microsoft.Resources/templateSpecs', variables('analyticRuleTemplateSpecName8'))]"
+        "[extensionResourceId(resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspace')), 'Microsoft.SecurityInsights/contentPackages', variables('_solutionId'))]"
       ],
       "properties": {
-        "description": "RegistryPersistenceViaAppCertDLLModification_AnalyticalRules Analytics Rule with template version 2.0.2",
+        "description": "RegistryPersistenceViaAppCertDLLModification_AnalyticalRules Analytics Rule with template version 3.0.1",
         "mainTemplate": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-          "contentVersion": "[variables('analyticRuleVersion8')]",
+          "contentVersion": "[variables('analyticRuleObject8').analyticRuleVersion8]",
           "parameters": {},
           "variables": {},
           "resources": [
             {
               "type": "Microsoft.SecurityInsights/AlertRuleTemplates",
-              "name": "[variables('AnalyticRulecontentId8')]",
+              "name": "[variables('analyticRuleObject8')._analyticRulecontentId8]",
               "apiVersion": "2022-04-01-preview",
               "kind": "Scheduled",
               "location": "[parameters('workspace-location')]",
@@ -2092,20 +1992,24 @@
                 "tactics": [
                   "Persistence"
                 ],
+                "subTechniques": [
+                  "T1546.009"
+                ],
                 "techniques": [
                   "T1546"
                 ],
                 "entityMappings": [
                   {
+                    "entityType": "RegistryKey",
                     "fieldMappings": [
                       {
                         "identifier": "Key",
                         "columnName": "TargetObject"
                       }
-                    ],
-                    "entityType": "RegistryKey"
+                    ]
                   },
                   {
+                    "entityType": "Host",
                     "fieldMappings": [
                       {
                         "identifier": "HostName",
@@ -2115,8 +2019,7 @@
                         "identifier": "DnsDomain",
                         "columnName": "DnsDomain"
                       }
-                    ],
-                    "entityType": "Host"
+                    ]
                   }
                 ]
               }
@@ -2124,13 +2027,13 @@
             {
               "type": "Microsoft.OperationalInsights/workspaces/providers/metadata",
               "apiVersion": "2022-01-01-preview",
-              "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat('AnalyticsRule-', last(split(variables('analyticRuleId8'),'/'))))]",
+              "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat('AnalyticsRule-', last(split(variables('analyticRuleObject8').analyticRuleId8,'/'))))]",
               "properties": {
                 "description": "Endpoint Threat Protection Essentials Analytics Rule 8",
-                "parentId": "[variables('analyticRuleId8')]",
-                "contentId": "[variables('_analyticRulecontentId8')]",
+                "parentId": "[variables('analyticRuleObject8').analyticRuleId8]",
+                "contentId": "[variables('analyticRuleObject8')._analyticRulecontentId8]",
                 "kind": "AnalyticsRule",
-                "version": "[variables('analyticRuleVersion8')]",
+                "version": "[variables('analyticRuleObject8').analyticRuleVersion8]",
                 "source": {
                   "kind": "Solution",
                   "name": "Endpoint Threat Protection Essentials",
@@ -2149,46 +2052,39 @@
               }
             }
           ]
-        }
+        },
+        "packageKind": "Solution",
+        "packageVersion": "[variables('_solutionVersion')]",
+        "packageName": "[variables('_solutionName')]",
+        "packageId": "[variables('_solutionId')]",
+        "contentSchemaVersion": "3.0.0",
+        "contentId": "[variables('analyticRuleObject8')._analyticRulecontentId8]",
+        "contentKind": "AnalyticsRule",
+        "displayName": "Registry Persistence via AppCert DLL Modification",
+        "contentProductId": "[variables('analyticRuleObject8')._analyticRulecontentProductId8]",
+        "id": "[variables('analyticRuleObject8')._analyticRulecontentProductId8]",
+        "version": "[variables('analyticRuleObject8').analyticRuleVersion8]"
       }
     },
     {
-      "type": "Microsoft.Resources/templateSpecs",
-      "apiVersion": "2022-02-01",
-      "name": "[variables('analyticRuleTemplateSpecName9')]",
+      "type": "Microsoft.OperationalInsights/workspaces/providers/contentTemplates",
+      "apiVersion": "2023-04-01-preview",
+      "name": "[variables('analyticRuleObject9').analyticRuleTemplateSpecName9]",
       "location": "[parameters('workspace-location')]",
-      "tags": {
-        "hidden-sentinelWorkspaceId": "[variables('workspaceResourceId')]",
-        "hidden-sentinelContentType": "AnalyticsRule"
-      },
-      "properties": {
-        "description": "Endpoint Threat Protection Essentials Analytics Rule 9 with template",
-        "displayName": "Endpoint Threat Protection Essentials Analytics Rule template"
-      }
-    },
-    {
-      "type": "Microsoft.Resources/templateSpecs/versions",
-      "apiVersion": "2022-02-01",
-      "name": "[concat(variables('analyticRuleTemplateSpecName9'),'/',variables('analyticRuleVersion9'))]",
-      "location": "[parameters('workspace-location')]",
-      "tags": {
-        "hidden-sentinelWorkspaceId": "[variables('workspaceResourceId')]",
-        "hidden-sentinelContentType": "AnalyticsRule"
-      },
       "dependsOn": [
-        "[resourceId('Microsoft.Resources/templateSpecs', variables('analyticRuleTemplateSpecName9'))]"
+        "[extensionResourceId(resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspace')), 'Microsoft.SecurityInsights/contentPackages', variables('_solutionId'))]"
       ],
       "properties": {
-        "description": "RegistryPersistenceViaAppInt_DLLsModification_AnalyticalRules Analytics Rule with template version 2.0.2",
+        "description": "RegistryPersistenceViaAppInt_DLLsModification_AnalyticalRules Analytics Rule with template version 3.0.1",
         "mainTemplate": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-          "contentVersion": "[variables('analyticRuleVersion9')]",
+          "contentVersion": "[variables('analyticRuleObject9').analyticRuleVersion9]",
           "parameters": {},
           "variables": {},
           "resources": [
             {
               "type": "Microsoft.SecurityInsights/AlertRuleTemplates",
-              "name": "[variables('AnalyticRulecontentId9')]",
+              "name": "[variables('analyticRuleObject9')._analyticRulecontentId9]",
               "apiVersion": "2022-04-01-preview",
               "kind": "Scheduled",
               "location": "[parameters('workspace-location')]",
@@ -2216,20 +2112,24 @@
                 "tactics": [
                   "Persistence"
                 ],
+                "subTechniques": [
+                  "T1546.010"
+                ],
                 "techniques": [
                   "T1546"
                 ],
                 "entityMappings": [
                   {
+                    "entityType": "RegistryKey",
                     "fieldMappings": [
                       {
                         "identifier": "Key",
                         "columnName": "TargetObject"
                       }
-                    ],
-                    "entityType": "RegistryKey"
+                    ]
                   },
                   {
+                    "entityType": "Host",
                     "fieldMappings": [
                       {
                         "identifier": "HostName",
@@ -2239,8 +2139,7 @@
                         "identifier": "DnsDomain",
                         "columnName": "DnsDomain"
                       }
-                    ],
-                    "entityType": "Host"
+                    ]
                   }
                 ]
               }
@@ -2248,13 +2147,13 @@
             {
               "type": "Microsoft.OperationalInsights/workspaces/providers/metadata",
               "apiVersion": "2022-01-01-preview",
-              "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat('AnalyticsRule-', last(split(variables('analyticRuleId9'),'/'))))]",
+              "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat('AnalyticsRule-', last(split(variables('analyticRuleObject9').analyticRuleId9,'/'))))]",
               "properties": {
                 "description": "Endpoint Threat Protection Essentials Analytics Rule 9",
-                "parentId": "[variables('analyticRuleId9')]",
-                "contentId": "[variables('_analyticRulecontentId9')]",
+                "parentId": "[variables('analyticRuleObject9').analyticRuleId9]",
+                "contentId": "[variables('analyticRuleObject9')._analyticRulecontentId9]",
                 "kind": "AnalyticsRule",
-                "version": "[variables('analyticRuleVersion9')]",
+                "version": "[variables('analyticRuleObject9').analyticRuleVersion9]",
                 "source": {
                   "kind": "Solution",
                   "name": "Endpoint Threat Protection Essentials",
@@ -2273,46 +2172,39 @@
               }
             }
           ]
-        }
+        },
+        "packageKind": "Solution",
+        "packageVersion": "[variables('_solutionVersion')]",
+        "packageName": "[variables('_solutionName')]",
+        "packageId": "[variables('_solutionId')]",
+        "contentSchemaVersion": "3.0.0",
+        "contentId": "[variables('analyticRuleObject9')._analyticRulecontentId9]",
+        "contentKind": "AnalyticsRule",
+        "displayName": "Registry Persistence via AppInit DLLs Modification",
+        "contentProductId": "[variables('analyticRuleObject9')._analyticRulecontentProductId9]",
+        "id": "[variables('analyticRuleObject9')._analyticRulecontentProductId9]",
+        "version": "[variables('analyticRuleObject9').analyticRuleVersion9]"
       }
     },
     {
-      "type": "Microsoft.Resources/templateSpecs",
-      "apiVersion": "2022-02-01",
-      "name": "[variables('analyticRuleTemplateSpecName10')]",
+      "type": "Microsoft.OperationalInsights/workspaces/providers/contentTemplates",
+      "apiVersion": "2023-04-01-preview",
+      "name": "[variables('analyticRuleObject10').analyticRuleTemplateSpecName10]",
       "location": "[parameters('workspace-location')]",
-      "tags": {
-        "hidden-sentinelWorkspaceId": "[variables('workspaceResourceId')]",
-        "hidden-sentinelContentType": "AnalyticsRule"
-      },
-      "properties": {
-        "description": "Endpoint Threat Protection Essentials Analytics Rule 10 with template",
-        "displayName": "Endpoint Threat Protection Essentials Analytics Rule template"
-      }
-    },
-    {
-      "type": "Microsoft.Resources/templateSpecs/versions",
-      "apiVersion": "2022-02-01",
-      "name": "[concat(variables('analyticRuleTemplateSpecName10'),'/',variables('analyticRuleVersion10'))]",
-      "location": "[parameters('workspace-location')]",
-      "tags": {
-        "hidden-sentinelWorkspaceId": "[variables('workspaceResourceId')]",
-        "hidden-sentinelContentType": "AnalyticsRule"
-      },
       "dependsOn": [
-        "[resourceId('Microsoft.Resources/templateSpecs', variables('analyticRuleTemplateSpecName10'))]"
+        "[extensionResourceId(resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspace')), 'Microsoft.SecurityInsights/contentPackages', variables('_solutionId'))]"
       ],
       "properties": {
-        "description": "SecurityEventLogCleared_AnalyticalRules Analytics Rule with template version 2.0.2",
+        "description": "SecurityEventLogCleared_AnalyticalRules Analytics Rule with template version 3.0.1",
         "mainTemplate": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-          "contentVersion": "[variables('analyticRuleVersion10')]",
+          "contentVersion": "[variables('analyticRuleObject10').analyticRuleVersion10]",
           "parameters": {},
           "variables": {},
           "resources": [
             {
               "type": "Microsoft.SecurityInsights/AlertRuleTemplates",
-              "name": "[variables('AnalyticRulecontentId10')]",
+              "name": "[variables('analyticRuleObject10')._analyticRulecontentId10]",
               "apiVersion": "2022-04-01-preview",
               "kind": "Scheduled",
               "location": "[parameters('workspace-location')]",
@@ -2357,6 +2249,7 @@
                 ],
                 "entityMappings": [
                   {
+                    "entityType": "Account",
                     "fieldMappings": [
                       {
                         "identifier": "Name",
@@ -2366,10 +2259,10 @@
                         "identifier": "UPNSuffix",
                         "columnName": "UPNSuffix"
                       }
-                    ],
-                    "entityType": "Account"
+                    ]
                   },
                   {
+                    "entityType": "Host",
                     "fieldMappings": [
                       {
                         "identifier": "HostName",
@@ -2379,8 +2272,7 @@
                         "identifier": "DnsDomain",
                         "columnName": "DnsDomain"
                       }
-                    ],
-                    "entityType": "Host"
+                    ]
                   }
                 ]
               }
@@ -2388,13 +2280,13 @@
             {
               "type": "Microsoft.OperationalInsights/workspaces/providers/metadata",
               "apiVersion": "2022-01-01-preview",
-              "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat('AnalyticsRule-', last(split(variables('analyticRuleId10'),'/'))))]",
+              "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat('AnalyticsRule-', last(split(variables('analyticRuleObject10').analyticRuleId10,'/'))))]",
               "properties": {
                 "description": "Endpoint Threat Protection Essentials Analytics Rule 10",
-                "parentId": "[variables('analyticRuleId10')]",
-                "contentId": "[variables('_analyticRulecontentId10')]",
+                "parentId": "[variables('analyticRuleObject10').analyticRuleId10]",
+                "contentId": "[variables('analyticRuleObject10')._analyticRulecontentId10]",
                 "kind": "AnalyticsRule",
-                "version": "[variables('analyticRuleVersion10')]",
+                "version": "[variables('analyticRuleObject10').analyticRuleVersion10]",
                 "source": {
                   "kind": "Solution",
                   "name": "Endpoint Threat Protection Essentials",
@@ -2413,46 +2305,39 @@
               }
             }
           ]
-        }
+        },
+        "packageKind": "Solution",
+        "packageVersion": "[variables('_solutionVersion')]",
+        "packageName": "[variables('_solutionName')]",
+        "packageId": "[variables('_solutionId')]",
+        "contentSchemaVersion": "3.0.0",
+        "contentId": "[variables('analyticRuleObject10')._analyticRulecontentId10]",
+        "contentKind": "AnalyticsRule",
+        "displayName": "Security Event log cleared",
+        "contentProductId": "[variables('analyticRuleObject10')._analyticRulecontentProductId10]",
+        "id": "[variables('analyticRuleObject10')._analyticRulecontentProductId10]",
+        "version": "[variables('analyticRuleObject10').analyticRuleVersion10]"
       }
     },
     {
-      "type": "Microsoft.Resources/templateSpecs",
-      "apiVersion": "2022-02-01",
-      "name": "[variables('analyticRuleTemplateSpecName11')]",
+      "type": "Microsoft.OperationalInsights/workspaces/providers/contentTemplates",
+      "apiVersion": "2023-04-01-preview",
+      "name": "[variables('analyticRuleObject11').analyticRuleTemplateSpecName11]",
       "location": "[parameters('workspace-location')]",
-      "tags": {
-        "hidden-sentinelWorkspaceId": "[variables('workspaceResourceId')]",
-        "hidden-sentinelContentType": "AnalyticsRule"
-      },
-      "properties": {
-        "description": "Endpoint Threat Protection Essentials Analytics Rule 11 with template",
-        "displayName": "Endpoint Threat Protection Essentials Analytics Rule template"
-      }
-    },
-    {
-      "type": "Microsoft.Resources/templateSpecs/versions",
-      "apiVersion": "2022-02-01",
-      "name": "[concat(variables('analyticRuleTemplateSpecName11'),'/',variables('analyticRuleVersion11'))]",
-      "location": "[parameters('workspace-location')]",
-      "tags": {
-        "hidden-sentinelWorkspaceId": "[variables('workspaceResourceId')]",
-        "hidden-sentinelContentType": "AnalyticsRule"
-      },
       "dependsOn": [
-        "[resourceId('Microsoft.Resources/templateSpecs', variables('analyticRuleTemplateSpecName11'))]"
+        "[extensionResourceId(resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspace')), 'Microsoft.SecurityInsights/contentPackages', variables('_solutionId'))]"
       ],
       "properties": {
-        "description": "WDigestDowngradeAttack_AnalyticalRules Analytics Rule with template version 2.0.2",
+        "description": "WDigestDowngradeAttack_AnalyticalRules Analytics Rule with template version 3.0.1",
         "mainTemplate": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-          "contentVersion": "[variables('analyticRuleVersion11')]",
+          "contentVersion": "[variables('analyticRuleObject11').analyticRuleVersion11]",
           "parameters": {},
           "variables": {},
           "resources": [
             {
               "type": "Microsoft.SecurityInsights/AlertRuleTemplates",
-              "name": "[variables('AnalyticRulecontentId11')]",
+              "name": "[variables('analyticRuleObject11')._analyticRulecontentId11]",
               "apiVersion": "2022-04-01-preview",
               "kind": "Scheduled",
               "location": "[parameters('workspace-location')]",
@@ -2485,15 +2370,16 @@
                 ],
                 "entityMappings": [
                   {
+                    "entityType": "RegistryKey",
                     "fieldMappings": [
                       {
                         "identifier": "Key",
                         "columnName": "TargetObject"
                       }
-                    ],
-                    "entityType": "RegistryKey"
+                    ]
                   },
                   {
+                    "entityType": "Host",
                     "fieldMappings": [
                       {
                         "identifier": "HostName",
@@ -2503,8 +2389,7 @@
                         "identifier": "DnsDomain",
                         "columnName": "DnsDomain"
                       }
-                    ],
-                    "entityType": "Host"
+                    ]
                   }
                 ]
               }
@@ -2512,13 +2397,13 @@
             {
               "type": "Microsoft.OperationalInsights/workspaces/providers/metadata",
               "apiVersion": "2022-01-01-preview",
-              "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat('AnalyticsRule-', last(split(variables('analyticRuleId11'),'/'))))]",
+              "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat('AnalyticsRule-', last(split(variables('analyticRuleObject11').analyticRuleId11,'/'))))]",
               "properties": {
                 "description": "Endpoint Threat Protection Essentials Analytics Rule 11",
-                "parentId": "[variables('analyticRuleId11')]",
-                "contentId": "[variables('_analyticRulecontentId11')]",
+                "parentId": "[variables('analyticRuleObject11').analyticRuleId11]",
+                "contentId": "[variables('analyticRuleObject11')._analyticRulecontentId11]",
                 "kind": "AnalyticsRule",
-                "version": "[variables('analyticRuleVersion11')]",
+                "version": "[variables('analyticRuleObject11').analyticRuleVersion11]",
                 "source": {
                   "kind": "Solution",
                   "name": "Endpoint Threat Protection Essentials",
@@ -2537,46 +2422,39 @@
               }
             }
           ]
-        }
+        },
+        "packageKind": "Solution",
+        "packageVersion": "[variables('_solutionVersion')]",
+        "packageName": "[variables('_solutionName')]",
+        "packageId": "[variables('_solutionId')]",
+        "contentSchemaVersion": "3.0.0",
+        "contentId": "[variables('analyticRuleObject11')._analyticRulecontentId11]",
+        "contentKind": "AnalyticsRule",
+        "displayName": "WDigest downgrade attack",
+        "contentProductId": "[variables('analyticRuleObject11')._analyticRulecontentProductId11]",
+        "id": "[variables('analyticRuleObject11')._analyticRulecontentProductId11]",
+        "version": "[variables('analyticRuleObject11').analyticRuleVersion11]"
       }
     },
     {
-      "type": "Microsoft.Resources/templateSpecs",
-      "apiVersion": "2022-02-01",
-      "name": "[variables('analyticRuleTemplateSpecName12')]",
+      "type": "Microsoft.OperationalInsights/workspaces/providers/contentTemplates",
+      "apiVersion": "2023-04-01-preview",
+      "name": "[variables('analyticRuleObject12').analyticRuleTemplateSpecName12]",
       "location": "[parameters('workspace-location')]",
-      "tags": {
-        "hidden-sentinelWorkspaceId": "[variables('workspaceResourceId')]",
-        "hidden-sentinelContentType": "AnalyticsRule"
-      },
-      "properties": {
-        "description": "Endpoint Threat Protection Essentials Analytics Rule 12 with template",
-        "displayName": "Endpoint Threat Protection Essentials Analytics Rule template"
-      }
-    },
-    {
-      "type": "Microsoft.Resources/templateSpecs/versions",
-      "apiVersion": "2022-02-01",
-      "name": "[concat(variables('analyticRuleTemplateSpecName12'),'/',variables('analyticRuleVersion12'))]",
-      "location": "[parameters('workspace-location')]",
-      "tags": {
-        "hidden-sentinelWorkspaceId": "[variables('workspaceResourceId')]",
-        "hidden-sentinelContentType": "AnalyticsRule"
-      },
       "dependsOn": [
-        "[resourceId('Microsoft.Resources/templateSpecs', variables('analyticRuleTemplateSpecName12'))]"
+        "[extensionResourceId(resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspace')), 'Microsoft.SecurityInsights/contentPackages', variables('_solutionId'))]"
       ],
       "properties": {
-        "description": "WindowsBinariesExecutedfromNon-DefaultDirectory_AnalyticalRules Analytics Rule with template version 2.0.2",
+        "description": "WindowsBinariesExecutedfromNon-DefaultDirectory_AnalyticalRules Analytics Rule with template version 3.0.1",
         "mainTemplate": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-          "contentVersion": "[variables('analyticRuleVersion12')]",
+          "contentVersion": "[variables('analyticRuleObject12').analyticRuleVersion12]",
           "parameters": {},
           "variables": {},
           "resources": [
             {
               "type": "Microsoft.SecurityInsights/AlertRuleTemplates",
-              "name": "[variables('AnalyticRulecontentId12')]",
+              "name": "[variables('analyticRuleObject12')._analyticRulecontentId12]",
               "apiVersion": "2022-04-01-preview",
               "kind": "Scheduled",
               "location": "[parameters('workspace-location')]",
@@ -2609,6 +2487,7 @@
                 ],
                 "entityMappings": [
                   {
+                    "entityType": "Account",
                     "fieldMappings": [
                       {
                         "identifier": "Name",
@@ -2618,10 +2497,10 @@
                         "identifier": "UPNSuffix",
                         "columnName": "UPNSuffix"
                       }
-                    ],
-                    "entityType": "Account"
+                    ]
                   },
                   {
+                    "entityType": "Host",
                     "fieldMappings": [
                       {
                         "identifier": "HostName",
@@ -2631,17 +2510,16 @@
                         "identifier": "DnsDomain",
                         "columnName": "DnsDomain"
                       }
-                    ],
-                    "entityType": "Host"
+                    ]
                   },
                   {
+                    "entityType": "Process",
                     "fieldMappings": [
                       {
                         "identifier": "CommandLine",
                         "columnName": "CommandLine"
                       }
-                    ],
-                    "entityType": "Process"
+                    ]
                   }
                 ]
               }
@@ -2649,13 +2527,13 @@
             {
               "type": "Microsoft.OperationalInsights/workspaces/providers/metadata",
               "apiVersion": "2022-01-01-preview",
-              "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat('AnalyticsRule-', last(split(variables('analyticRuleId12'),'/'))))]",
+              "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat('AnalyticsRule-', last(split(variables('analyticRuleObject12').analyticRuleId12,'/'))))]",
               "properties": {
                 "description": "Endpoint Threat Protection Essentials Analytics Rule 12",
-                "parentId": "[variables('analyticRuleId12')]",
-                "contentId": "[variables('_analyticRulecontentId12')]",
+                "parentId": "[variables('analyticRuleObject12').analyticRuleId12]",
+                "contentId": "[variables('analyticRuleObject12')._analyticRulecontentId12]",
                 "kind": "AnalyticsRule",
-                "version": "[variables('analyticRuleVersion12')]",
+                "version": "[variables('analyticRuleObject12').analyticRuleVersion12]",
                 "source": {
                   "kind": "Solution",
                   "name": "Endpoint Threat Protection Essentials",
@@ -2674,46 +2552,39 @@
               }
             }
           ]
-        }
+        },
+        "packageKind": "Solution",
+        "packageVersion": "[variables('_solutionVersion')]",
+        "packageName": "[variables('_solutionName')]",
+        "packageId": "[variables('_solutionId')]",
+        "contentSchemaVersion": "3.0.0",
+        "contentId": "[variables('analyticRuleObject12')._analyticRulecontentId12]",
+        "contentKind": "AnalyticsRule",
+        "displayName": "Windows Binaries Executed from Non-Default Directory",
+        "contentProductId": "[variables('analyticRuleObject12')._analyticRulecontentProductId12]",
+        "id": "[variables('analyticRuleObject12')._analyticRulecontentProductId12]",
+        "version": "[variables('analyticRuleObject12').analyticRuleVersion12]"
       }
     },
     {
-      "type": "Microsoft.Resources/templateSpecs",
-      "apiVersion": "2022-02-01",
-      "name": "[variables('analyticRuleTemplateSpecName13')]",
+      "type": "Microsoft.OperationalInsights/workspaces/providers/contentTemplates",
+      "apiVersion": "2023-04-01-preview",
+      "name": "[variables('analyticRuleObject13').analyticRuleTemplateSpecName13]",
       "location": "[parameters('workspace-location')]",
-      "tags": {
-        "hidden-sentinelWorkspaceId": "[variables('workspaceResourceId')]",
-        "hidden-sentinelContentType": "AnalyticsRule"
-      },
-      "properties": {
-        "description": "Endpoint Threat Protection Essentials Analytics Rule 13 with template",
-        "displayName": "Endpoint Threat Protection Essentials Analytics Rule template"
-      }
-    },
-    {
-      "type": "Microsoft.Resources/templateSpecs/versions",
-      "apiVersion": "2022-02-01",
-      "name": "[concat(variables('analyticRuleTemplateSpecName13'),'/',variables('analyticRuleVersion13'))]",
-      "location": "[parameters('workspace-location')]",
-      "tags": {
-        "hidden-sentinelWorkspaceId": "[variables('workspaceResourceId')]",
-        "hidden-sentinelContentType": "AnalyticsRule"
-      },
       "dependsOn": [
-        "[resourceId('Microsoft.Resources/templateSpecs', variables('analyticRuleTemplateSpecName13'))]"
+        "[extensionResourceId(resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspace')), 'Microsoft.SecurityInsights/contentPackages', variables('_solutionId'))]"
       ],
       "properties": {
-        "description": "WindowsBinariesLolbinsRenamed_AnalyticalRules Analytics Rule with template version 2.0.2",
+        "description": "WindowsBinariesLolbinsRenamed_AnalyticalRules Analytics Rule with template version 3.0.1",
         "mainTemplate": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-          "contentVersion": "[variables('analyticRuleVersion13')]",
+          "contentVersion": "[variables('analyticRuleObject13').analyticRuleVersion13]",
           "parameters": {},
           "variables": {},
           "resources": [
             {
               "type": "Microsoft.SecurityInsights/AlertRuleTemplates",
-              "name": "[variables('AnalyticRulecontentId13')]",
+              "name": "[variables('analyticRuleObject13')._analyticRulecontentId13]",
               "apiVersion": "2022-04-01-preview",
               "kind": "Scheduled",
               "location": "[parameters('workspace-location')]",
@@ -2746,15 +2617,16 @@
                 ],
                 "entityMappings": [
                   {
+                    "entityType": "Process",
                     "fieldMappings": [
                       {
                         "identifier": "CommandLine",
                         "columnName": "CommandLine"
                       }
-                    ],
-                    "entityType": "Process"
+                    ]
                   },
                   {
+                    "entityType": "Host",
                     "fieldMappings": [
                       {
                         "identifier": "HostName",
@@ -2764,17 +2636,16 @@
                         "identifier": "DnsDomain",
                         "columnName": "DnsDomain"
                       }
-                    ],
-                    "entityType": "Host"
+                    ]
                   },
                   {
+                    "entityType": "Account",
                     "fieldMappings": [
                       {
                         "identifier": "Name",
                         "columnName": "User"
                       }
-                    ],
-                    "entityType": "Account"
+                    ]
                   }
                 ]
               }
@@ -2782,13 +2653,13 @@
             {
               "type": "Microsoft.OperationalInsights/workspaces/providers/metadata",
               "apiVersion": "2022-01-01-preview",
-              "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat('AnalyticsRule-', last(split(variables('analyticRuleId13'),'/'))))]",
+              "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat('AnalyticsRule-', last(split(variables('analyticRuleObject13').analyticRuleId13,'/'))))]",
               "properties": {
                 "description": "Endpoint Threat Protection Essentials Analytics Rule 13",
-                "parentId": "[variables('analyticRuleId13')]",
-                "contentId": "[variables('_analyticRulecontentId13')]",
+                "parentId": "[variables('analyticRuleObject13').analyticRuleId13]",
+                "contentId": "[variables('analyticRuleObject13')._analyticRulecontentId13]",
                 "kind": "AnalyticsRule",
-                "version": "[variables('analyticRuleVersion13')]",
+                "version": "[variables('analyticRuleObject13').analyticRuleVersion13]",
                 "source": {
                   "kind": "Solution",
                   "name": "Endpoint Threat Protection Essentials",
@@ -2807,17 +2678,35 @@
               }
             }
           ]
-        }
+        },
+        "packageKind": "Solution",
+        "packageVersion": "[variables('_solutionVersion')]",
+        "packageName": "[variables('_solutionName')]",
+        "packageId": "[variables('_solutionId')]",
+        "contentSchemaVersion": "3.0.0",
+        "contentId": "[variables('analyticRuleObject13')._analyticRulecontentId13]",
+        "contentKind": "AnalyticsRule",
+        "displayName": "Windows Binaries Lolbins Renamed",
+        "contentProductId": "[variables('analyticRuleObject13')._analyticRulecontentProductId13]",
+        "id": "[variables('analyticRuleObject13')._analyticRulecontentProductId13]",
+        "version": "[variables('analyticRuleObject13').analyticRuleVersion13]"
       }
     },
     {
-      "type": "Microsoft.OperationalInsights/workspaces/providers/metadata",
-      "apiVersion": "2022-01-01-preview",
+      "type": "Microsoft.OperationalInsights/workspaces/providers/contentPackages",
+      "apiVersion": "2023-04-01-preview",
       "location": "[parameters('workspace-location')]",
       "properties": {
-        "version": "2.0.2",
+        "version": "3.0.1",
         "kind": "Solution",
-        "contentSchemaVersion": "2.0.0",
+        "contentSchemaVersion": "3.0.0",
+        "displayName": "Endpoint Threat Protection Essentials",
+        "publisherDisplayName": "Microsoft Sentinel, Microsoft Corporation",
+        "descriptionHtml": "<p><strong>Note:</strong> <em>There may be <a href=\"https://aka.ms/sentinelsolutionsknownissues\">known issues</a> pertaining to this Solution, please refer to them before installing.</em></p>\n<p>The <strong>Endpoint Threat Protection Essentials</strong> solution provides content to monitor, detect and investigate threats related to windows machines. The solution looks for things like suspicious commandlines, PowerShell based attacks, LOLBins, registry manipulation, scheduled tasks etc. which are some of the most commonly used techniques by attackers when targeting endpoints.</p>\n<p><strong>Pre-requisites:</strong></p>\n<p>This is a <a href=\"https://learn.microsoft.com/en-us/azure/sentinel/sentinel-solutions-catalog#domain-solutions\">domain solution</a> and does not include any data connectors. The content in this solution supports the connectors listed below. Install one or more of the listed solutions, to unlock the value provided by this solution.</p>\n<ol>\n<li><p><a href=\"https://ms.portal.azure.com/#create/azuresentinel.azure-sentinel-solution-securityeventsazure-sentinel-solution-securityevents\">Windows Security Events</a></p>\n</li>\n<li><p><a href=\"https://ms.portal.azure.com/#create/azuresentinel.azure-sentinel-solution-microsoft365defenderazure-sentinel-solution-microsoft365defender\"> Microsoft Defender XDR </a></p>\n</li>\n<li><p><a href=\"https://ms.portal.azure.com/#create/azuresentinel.azure-sentinel-solution-windowsforwardedeventsazure-sentinel-solution-windowsforwardedevents\">Windows Forwarded Events</a></p>\n</li>\n</ol>\n<p><strong>Keywords:</strong> LOLBins, PowerShell, Registry, Lsass, Commandline, scheduled tasks, Malware.</p>\n<p><strong>Analytic Rules:</strong> 13, <strong>Hunting Queries:</strong> 10</p>\n<p><a href=\"https://aka.ms/azuresentinel\">Learn more about Microsoft Sentinel</a> | <a href=\"https://aka.ms/azuresentinelsolutionsdoc\">Learn more about Solutions</a></p>\n",
+        "contentKind": "Solution",
+        "contentProductId": "[variables('_solutioncontentProductId')]",
+        "id": "[variables('_solutioncontentProductId')]",
+        "icon": "<img src=\"https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg\" width=\"75px\" height=\"75px\">",
         "contentId": "[variables('_solutionId')]",
         "parentId": "[variables('_solutionId')]",
         "source": {
@@ -2840,118 +2729,118 @@
           "criteria": [
             {
               "kind": "HuntingQuery",
-              "contentId": "[variables('_huntingQuerycontentId1')]",
-              "version": "[variables('huntingQueryVersion1')]"
+              "contentId": "[variables('huntingQueryObject1')._huntingQuerycontentId1]",
+              "version": "[variables('huntingQueryObject1').huntingQueryVersion1]"
             },
             {
               "kind": "HuntingQuery",
-              "contentId": "[variables('_huntingQuerycontentId2')]",
-              "version": "[variables('huntingQueryVersion2')]"
+              "contentId": "[variables('huntingQueryObject2')._huntingQuerycontentId2]",
+              "version": "[variables('huntingQueryObject2').huntingQueryVersion2]"
             },
             {
               "kind": "HuntingQuery",
-              "contentId": "[variables('_huntingQuerycontentId3')]",
-              "version": "[variables('huntingQueryVersion3')]"
+              "contentId": "[variables('huntingQueryObject3')._huntingQuerycontentId3]",
+              "version": "[variables('huntingQueryObject3').huntingQueryVersion3]"
             },
             {
               "kind": "HuntingQuery",
-              "contentId": "[variables('_huntingQuerycontentId4')]",
-              "version": "[variables('huntingQueryVersion4')]"
+              "contentId": "[variables('huntingQueryObject4')._huntingQuerycontentId4]",
+              "version": "[variables('huntingQueryObject4').huntingQueryVersion4]"
             },
             {
               "kind": "HuntingQuery",
-              "contentId": "[variables('_huntingQuerycontentId5')]",
-              "version": "[variables('huntingQueryVersion5')]"
+              "contentId": "[variables('huntingQueryObject5')._huntingQuerycontentId5]",
+              "version": "[variables('huntingQueryObject5').huntingQueryVersion5]"
             },
             {
               "kind": "HuntingQuery",
-              "contentId": "[variables('_huntingQuerycontentId6')]",
-              "version": "[variables('huntingQueryVersion6')]"
+              "contentId": "[variables('huntingQueryObject6')._huntingQuerycontentId6]",
+              "version": "[variables('huntingQueryObject6').huntingQueryVersion6]"
             },
             {
               "kind": "HuntingQuery",
-              "contentId": "[variables('_huntingQuerycontentId7')]",
-              "version": "[variables('huntingQueryVersion7')]"
+              "contentId": "[variables('huntingQueryObject7')._huntingQuerycontentId7]",
+              "version": "[variables('huntingQueryObject7').huntingQueryVersion7]"
             },
             {
               "kind": "HuntingQuery",
-              "contentId": "[variables('_huntingQuerycontentId8')]",
-              "version": "[variables('huntingQueryVersion8')]"
+              "contentId": "[variables('huntingQueryObject8')._huntingQuerycontentId8]",
+              "version": "[variables('huntingQueryObject8').huntingQueryVersion8]"
             },
             {
               "kind": "HuntingQuery",
-              "contentId": "[variables('_huntingQuerycontentId9')]",
-              "version": "[variables('huntingQueryVersion9')]"
+              "contentId": "[variables('huntingQueryObject9')._huntingQuerycontentId9]",
+              "version": "[variables('huntingQueryObject9').huntingQueryVersion9]"
             },
             {
               "kind": "HuntingQuery",
-              "contentId": "[variables('_huntingQuerycontentId10')]",
-              "version": "[variables('huntingQueryVersion10')]"
+              "contentId": "[variables('huntingQueryObject10')._huntingQuerycontentId10]",
+              "version": "[variables('huntingQueryObject10').huntingQueryVersion10]"
             },
             {
               "kind": "AnalyticsRule",
-              "contentId": "[variables('analyticRulecontentId1')]",
-              "version": "[variables('analyticRuleVersion1')]"
+              "contentId": "[variables('analyticRuleObject1')._analyticRulecontentId1]",
+              "version": "[variables('analyticRuleObject1').analyticRuleVersion1]"
             },
             {
               "kind": "AnalyticsRule",
-              "contentId": "[variables('analyticRulecontentId2')]",
-              "version": "[variables('analyticRuleVersion2')]"
+              "contentId": "[variables('analyticRuleObject2')._analyticRulecontentId2]",
+              "version": "[variables('analyticRuleObject2').analyticRuleVersion2]"
             },
             {
               "kind": "AnalyticsRule",
-              "contentId": "[variables('analyticRulecontentId3')]",
-              "version": "[variables('analyticRuleVersion3')]"
+              "contentId": "[variables('analyticRuleObject3')._analyticRulecontentId3]",
+              "version": "[variables('analyticRuleObject3').analyticRuleVersion3]"
             },
             {
               "kind": "AnalyticsRule",
-              "contentId": "[variables('analyticRulecontentId4')]",
-              "version": "[variables('analyticRuleVersion4')]"
+              "contentId": "[variables('analyticRuleObject4')._analyticRulecontentId4]",
+              "version": "[variables('analyticRuleObject4').analyticRuleVersion4]"
             },
             {
               "kind": "AnalyticsRule",
-              "contentId": "[variables('analyticRulecontentId5')]",
-              "version": "[variables('analyticRuleVersion5')]"
+              "contentId": "[variables('analyticRuleObject5')._analyticRulecontentId5]",
+              "version": "[variables('analyticRuleObject5').analyticRuleVersion5]"
             },
             {
               "kind": "AnalyticsRule",
-              "contentId": "[variables('analyticRulecontentId6')]",
-              "version": "[variables('analyticRuleVersion6')]"
+              "contentId": "[variables('analyticRuleObject6')._analyticRulecontentId6]",
+              "version": "[variables('analyticRuleObject6').analyticRuleVersion6]"
             },
             {
               "kind": "AnalyticsRule",
-              "contentId": "[variables('analyticRulecontentId7')]",
-              "version": "[variables('analyticRuleVersion7')]"
+              "contentId": "[variables('analyticRuleObject7')._analyticRulecontentId7]",
+              "version": "[variables('analyticRuleObject7').analyticRuleVersion7]"
             },
             {
               "kind": "AnalyticsRule",
-              "contentId": "[variables('analyticRulecontentId8')]",
-              "version": "[variables('analyticRuleVersion8')]"
+              "contentId": "[variables('analyticRuleObject8')._analyticRulecontentId8]",
+              "version": "[variables('analyticRuleObject8').analyticRuleVersion8]"
             },
             {
               "kind": "AnalyticsRule",
-              "contentId": "[variables('analyticRulecontentId9')]",
-              "version": "[variables('analyticRuleVersion9')]"
+              "contentId": "[variables('analyticRuleObject9')._analyticRulecontentId9]",
+              "version": "[variables('analyticRuleObject9').analyticRuleVersion9]"
             },
             {
               "kind": "AnalyticsRule",
-              "contentId": "[variables('analyticRulecontentId10')]",
-              "version": "[variables('analyticRuleVersion10')]"
+              "contentId": "[variables('analyticRuleObject10')._analyticRulecontentId10]",
+              "version": "[variables('analyticRuleObject10').analyticRuleVersion10]"
             },
             {
               "kind": "AnalyticsRule",
-              "contentId": "[variables('analyticRulecontentId11')]",
-              "version": "[variables('analyticRuleVersion11')]"
+              "contentId": "[variables('analyticRuleObject11')._analyticRulecontentId11]",
+              "version": "[variables('analyticRuleObject11').analyticRuleVersion11]"
             },
             {
               "kind": "AnalyticsRule",
-              "contentId": "[variables('analyticRulecontentId12')]",
-              "version": "[variables('analyticRuleVersion12')]"
+              "contentId": "[variables('analyticRuleObject12')._analyticRulecontentId12]",
+              "version": "[variables('analyticRuleObject12').analyticRuleVersion12]"
             },
             {
               "kind": "AnalyticsRule",
-              "contentId": "[variables('analyticRulecontentId13')]",
-              "version": "[variables('analyticRuleVersion13')]"
+              "contentId": "[variables('analyticRuleObject13')._analyticRulecontentId13]",
+              "version": "[variables('analyticRuleObject13').analyticRuleVersion13]"
             }
           ]
         },
